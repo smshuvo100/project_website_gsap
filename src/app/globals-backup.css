@@ -1,19 +1,10 @@
-/* 
-
-
-element {
+.mm {
+  display: block;
+  text-align: start;
+  position: relative;
+  background-position-x: 67.3854%;
   translate: none;
   rotate: none;
   scale: none;
-  border-radius: 100rem;
-  transform: translate(0px, -200.1px) scale(0.14);
+  transform: translate3d(-26.9542px, 0px, 0px);
 }
-element {
-  translate: none;
-  rotate: none;
-  scale: none;
-  border-radius: 1.5rem;
-  transform: translate(0px);
-}
-"gsap scroll animation in this videio section"
-*/

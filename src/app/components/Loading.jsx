@@ -1,61 +1,31 @@
 "use client";
-
-import { gsap } from "gsap";
-import { useEffect, useRef } from "react";
-
-export default function Loading({ onComplete }) {
-  const containerRef = useRef(null);
-  const progressRef = useRef(null);
-  const percentRef = useRef(null);
+import { useEffect, useState } from "react";
+import ClockLoader from "react-spinners/ClockLoader";
+export default function Loading() {
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const tl = gsap.timeline({
-      defaults: { ease: "power3.inOut" },
-      onComplete: () => {
-        gsap.to(containerRef.current, {
-          opacity: 0,
-          duration: 0.5,
-          onComplete: () => {
-            onComplete?.();
-          }
-        });
-      }
-    });
+    // Simulate a delay (e.g., 3 seconds)
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 2000);
 
-    tl.to(progressRef.current, {
-      width: "100%",
-      duration: 2,
-      onUpdate: function () {
-        const progress = Math.round(this.progress() * 100);
-        percentRef.current.textContent = progress;
-      }
-    });
-
-    return () => tl.kill();
-  }, [onComplete]);
-
-  const animatePreloaderBackground = () => {
-    gsap.to(containerRef.current, {
-      backgroundColor: "#f5f5f5", // Change to a lighter color for preloader
-      duration: 1,
-      ease: "power2.inOut"
-    });
-    gsap.to(containerRef.current, {
-      backgroundColor: "#ffffff", // Final background color for preloader
-      duration: 1,
-      delay: 1,
-      ease: "power2.inOut"
-    });
-  };
+    return () => clearTimeout(timer); // Cleanup timeout
+  }, []);
 
   return (
-    <div ref={containerRef} className="loading-container">
-      <p className="loading-text">
-        Loading <span ref={percentRef}>0</span>%
-      </p>
-      <div className="progress-bar">
-        <div ref={progressRef} className="progress-fill" />
-      </div>
+    <div className="loading-wrapper">
+      {showContent ? (
+        <p>Content Loaded!</p>
+      ) : (
+        <ClockLoader
+          color="var(--primary)" // Using the CSS variable for color
+          size={100} // Customize the size
+          cssOverride={{
+            borderColor: "var(--primary)" // Also apply it to the border
+          }}
+        />
+      )}
     </div>
   );
 }

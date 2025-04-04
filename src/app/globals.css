@@ -76,8 +76,8 @@ h6 span {
   line-height: 77px;
 }
 .title-3 {
-  font-size: 211px;
-  line-height: 156px;
+  font-size: 160px;
+  line-height: 145px;
 }
 .text-1 {
   font-size: 20px;
@@ -231,56 +231,29 @@ h6 span {
 loading-container
 =================
 */
-.loading-container {
+.loading-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: var(--background);
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--foreground);
-  font-family: Arial, sans-serif;
+  background: var(--background);
   z-index: 9999;
-  /* transition: opacity 0.5s ease-in-out; */
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #fff;
 }
-
-.loading-text {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 5px;
+.my-clock-loader {
+  color: #ff2f00 !important; /* Customize the color here */
 }
-
-.progress-bar {
-  width: 250px;
-  height: 8px;
-  background-color: rgba(63, 65, 68, 0.2);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-/* Dark mode */
-:root.dark .progress-bar {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.progress-fill {
-  height: 100%;
-  width: 0%;
-  background-color: var(--primary);
-  transition: width 0.2s ease-in-out;
-}
-
 /* 
 =====================
 menu
 =================
 */
 .header-wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -457,29 +430,85 @@ menu
   video-sec
 ============================
 */
-/* Video Section */
-/* Video Section */
 .video-sec {
-  position: relative;
-  width: 100%;
-  height: 150vh; /* Make section tall enough for scroll effect */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
 .video-wrapper {
-  width: 100%;
-  max-width: 800px; /* Adjust based on your desired max size */
-  margin: 0 auto;
   overflow: hidden;
-  will-change: transform, opacity, border-radius;
-  transform-origin: center center;
 }
-
 .video-wrapper video {
   width: 100%;
-  height: auto;
   display: block;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+/* ============================ */
+/* Update your CSS to use class instead of ID */
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(14, 147, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(41, 245, 163);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+============================
+  recent-work-sec
+============================
+*/
+.recent-work-sec {
+  padding-top: 150px;
+}
+.recent-work-sec .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* for animation */
+.dark .recent-work-sec .title-3 .block {
+  background: linear-gradient(90deg, #e0eeee 50%, #252525 0);
+  background-size: 200% 100%;
+  background-position-x: 0%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+}
+.recent-work-sec .title-3 .block {
+  background: linear-gradient(90deg, #3f4144 50%, #dce1e1 0);
+  background-size: 200% 100%;
+  background-position-x: 0%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
 }

@@ -1,8 +1,9 @@
 import { Syne } from "next/font/google";
 import localFont from "next/font/local";
-import LayoutWrapper from "./LayoutWrapper";
+//.import LayoutWrapper from "./LayoutWrapper";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import LoadingWrapper from "./components/LoadingWrapper";
 import ThemeProvider from "./components/ThemeProvider";
 import "./globals.css";
 // Define your custom Softype font
@@ -29,11 +30,11 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className={`${syne.variable} ${softype.variable}`}>
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <LayoutWrapper>
+          <LoadingWrapper>
             <Header />
             {children}
             <Footer />
-          </LayoutWrapper>
+          </LoadingWrapper>
         </ThemeProvider>
       </body>
     </html>

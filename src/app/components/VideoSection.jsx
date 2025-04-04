@@ -1,49 +1,54 @@
 "use client";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect, useRef } from "react";
+import { useRef } from "react";
 
 export function VideoSection() {
-  const videoContainerRef = useRef(null);
-  const sectionRef = useRef(null);
+  const videoRef = useRef(null);
+  const videoSecRef = useRef(null);
 
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // Register plugins
+  gsap.registerPlugin(ScrollTrigger);
 
-    // Set initial small state
-    gsap.set(videoContainerRef.current, {
-      scale: 0.3,
-      opacity: 0.7,
-      borderRadius: "50%"
-    });
-
-    // Create scroll animation
-    gsap.to(videoContainerRef.current, {
-      scale: 1,
-      opacity: 1,
-      borderRadius: "0%",
-      ease: "none",
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top center", // When top of section hits center of viewport
-        end: "bottom center", // When bottom of section hits center of viewport
-        scrub: 1, // Smooth scrubbing effect
-        markers: false // Set to true to see trigger positions
-      }
-    });
-
-    return () => ScrollTrigger.getAll().forEach((t) => t.kill());
-  }, []);
+  // Video animation - Scaling on scroll
+  useGSAP(
+    () => {
+      gsap.from(videoRef.current, {
+        y: -500,
+        scale: 0.14,
+        duration: 2,
+        borderRadius: "50rem", // ✅ Use px or rem instead of %
+        scrollTrigger: {
+          trigger: videoSecRef.current,
+          start: "top 70%",
+          end: "top 90%",
+          toggleActions: "play none none none",
+          scrub: 2,
+          pin: true,
+          onEnter: () => {
+            gsap.to(videoRef.current, {
+              y: 0,
+              scale: 1
+            });
+          }
+        }
+      });
+    },
+    { scope: videoSecRef }
+  );
 
   return (
-    <section ref={sectionRef} id="video-sec" className="video-sec">
-      <div className="container">
-        <div ref={videoContainerRef} className="video-wrapper">
-          <video autoPlay loop muted playsInline>
-            <source src="/video/intro-video.mp4" type="video/mp4" />
-          </video>
+    <>
+      <section id="video-sec" ref={videoSecRef} className="video-sec">
+        <div className="container">
+          <div className="video-wrapper" ref={videoRef}>
+            <video autoPlay loop muted>
+              <source src="/video/intro-video.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
