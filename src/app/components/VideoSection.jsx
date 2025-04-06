@@ -21,8 +21,8 @@ export function VideoSection() {
         borderRadius: "50rem", // ✅ Use px or rem instead of %
         scrollTrigger: {
           trigger: videoSecRef.current,
-          start: "top 70%",
-          end: "top 90%",
+          start: "top 60%",
+          end: "top 80%",
           toggleActions: "play none none none",
           scrub: 2,
           pin: true,
