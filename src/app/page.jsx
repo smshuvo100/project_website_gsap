@@ -1,7 +1,12 @@
 "use client";
 
+import { ClientTestimonial } from "./components/ClientTestimonial";
+import { CounterSection } from "./components/CounterSection";
+import { DribbbleSection } from "./components/DribbbleSection";
 import { HeroSection } from "./components/HeroSection";
 import { LeftImgSection } from "./components/LeftImgSection";
+import { NewsTracker } from "./components/NewsTracker";
+import { PageTitle } from "./components/PageTitle";
 import { RecentWorkSection } from "./components/RecentWorkSection";
 import { RightImgSection } from "./components/RightImgSection";
 import { VideoSection } from "./components/VideoSection";
@@ -16,10 +21,18 @@ export default function Home() {
       <LeftImgSection />
       <RightImgSection title={"technis"} description={"UI Design, UX, Wireframe"} images={"technis-main-landscape.webp"} />
       <WhoWeAre />
+      <CounterSection />
+      <PageTitle />
+      <ClientTestimonial />
+      <NewsTracker />
+      <DribbbleSection />
+
       {/* 
-WhoWeAre
-WhoWeAre.jsx
-*/}
+      DribbbleSection
+      DribbbleSection.jsx
+      dribbble.1a51ca99.webp
+      */}
+
       <br />
       <br />
       <br />
