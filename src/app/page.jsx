@@ -4,11 +4,13 @@ import { ClientTestimonial } from "./components/ClientTestimonial";
 import { CounterSection } from "./components/CounterSection";
 import { DribbbleSection } from "./components/DribbbleSection";
 import { HeroSection } from "./components/HeroSection";
+import { JungleSection } from "./components/JungleSection";
 import { LeftImgSection } from "./components/LeftImgSection";
 import { NewsTracker } from "./components/NewsTracker";
 import { PageTitle } from "./components/PageTitle";
 import { RecentWorkSection } from "./components/RecentWorkSection";
 import { RightImgSection } from "./components/RightImgSection";
+import { SocialSection } from "./components/SocialSection";
 import { VideoSection } from "./components/VideoSection";
 import { WhoWeAre } from "./components/WhoWeAre";
 export default function Home() {
@@ -26,97 +28,8 @@ export default function Home() {
       <ClientTestimonial />
       <NewsTracker />
       <DribbbleSection />
-
-      {/* 
-      DribbbleSection
-      DribbbleSection.jsx
-      dribbble.1a51ca99.webp
-      */}
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <JungleSection />
+      <SocialSection />
     </>
   );
 }

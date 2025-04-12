@@ -765,3 +765,119 @@ section.hero-wrapper h1.title-1.text-center {
 .news-tracker .ticker.arabic {
   direction: rtl;
 }
+
+/* 
+======================
+  dribbble-sec
+======================
+*/
+.dribbble-sec .dribbble-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+.dribbble-sec .dribbble-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  z-index: 9;
+  position: relative;
+}
+.dribbble-sec .dribbble-middle-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+  max-width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  left: calc(50% - 250px);
+  top: calc(50% - 150px);
+  width: 100%;
+  --tw-translate-y: -50%;
+  --tw-translate-x: -50%;
+  z-index: 1;
+}
+section.dribbble-sec {
+  position: relative;
+}
+.dribbble-sec .dribbble-posts .dribbble-img img {
+  border-radius: 20px;
+}
+
+.jungle-sec .title-3 .block {
+  background: linear-gradient(90deg, #e0eeee 50%, #252525 0);
+  background-size: 200% 100%;
+  background-position-x: 0%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+/* 
+=================================
+  social-sec
+=================================
+*/
+.social-sec .social-item p {
+  font-size: 42px;
+  color: #fff;
+}
+.social-sec .social-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 2px solid #fff;
+  padding: 35px 0;
+  transition: all 0.3s ease-in-out;
+}
+.social-sec .social-item:hover {
+  max-width: 1100px;
+}
+/* 
+======================
+  footer
+======================
+*/
+footer.footer {
+  padding-bottom: 150px;
+}
+footer.footer .boxa {
+  display: flex;
+  padding: 38px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+footer.footer .boxa a.f-link.sm2,
+footer.footer .boxa a.f-link.sm1 {
+  width: 25%;
+}
+footer.footer .boxa a.f-link.sm4 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+footer.footer .boxa a.f-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer.footer .boxa a.f-link p.ft1 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+footer.footer .boxa a.f-link p.ft2 {
+  font-size: 30px;
+  line-height: 40px;
+}
