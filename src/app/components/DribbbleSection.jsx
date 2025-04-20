@@ -24,58 +24,169 @@ export function DribbbleSection() {
   // Register plugins
   gsap.registerPlugin(ScrollTrigger);
 
+  // media query
+  const media = gsap.matchMedia();
+
   // img 1 animation
+  //====================
   useGSAP(
     () => {
-      gsap.to(imgRef1.current, {
-        x: -350,
-        rotate: -10,
-        duration: 2,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: imgRef1.current,
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 2
-        }
+      // Desktop (1025px and up)
+      media.add("(min-width: 1025px)", () => {
+        gsap.to(imgRef1.current, {
+          x: -350,
+          rotate: -10,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef1.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Tablet (768px to 1024px)
+      media.add("(min-width: 768px) and (max-width: 1024px)", () => {
+        gsap.to(imgRef1.current, {
+          x: -250,
+          rotate: -10,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef1.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Mobile (767px and below)
+      media.add("(max-width: 767px)", () => {
+        gsap.to(imgRef1.current, {
+          x: -50,
+          rotate: -0,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef1.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
       });
     },
     { scope: secimgRef1 }
   );
 
   // img 2 animation
+  //====================
   useGSAP(
     () => {
-      gsap.to(imgRef2.current, {
-        x: 350,
-        rotate: 10,
-        duration: 2,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: imgRef2.current,
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 2
-        }
+      // Desktop (1025px and up)
+      media.add("(min-width: 1025px)", () => {
+        gsap.to(imgRef2.current, {
+          x: 350,
+          rotate: 10,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef2.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Tablet (768px to 1024px)
+      media.add("(min-width: 768px) and (max-width: 1024px)", () => {
+        gsap.to(imgRef2.current, {
+          x: 250,
+          rotate: 10,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef2.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Mobile (767px and below)
+      media.add("(max-width: 767px)", () => {
+        gsap.to(imgRef2.current, {
+          x: 50,
+          rotate: 0,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef2.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
       });
     },
     { scope: secimgRef2 }
   );
 
   // img 3 animation
+  //====================
   useGSAP(
     () => {
-      gsap.to(imgRef3.current, {
-        x: -350,
-        rotate: -20,
-        duration: 2,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: imgRef3.current,
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 2
-        }
+      // Desktop (1025px and up)
+      media.add("(min-width: 1025px)", () => {
+        gsap.to(imgRef3.current, {
+          x: -350,
+          rotate: -20,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef3.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Tablet (768px to 1024px)
+      media.add("(min-width: 768px) and (max-width: 1024px)", () => {
+        gsap.to(imgRef3.current, {
+          x: -250,
+          rotate: -20,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef3.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Mobile (767px and below)
+      media.add("(max-width: 767px)", () => {
+        gsap.to(imgRef3.current, {
+          x: -310,
+          rotate: -16,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef3.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
       });
     },
     { scope: secimgRef3 }
@@ -84,17 +195,52 @@ export function DribbbleSection() {
   // img 4 animation
   useGSAP(
     () => {
-      gsap.to(imgRef4.current, {
-        x: 350,
-        rotate: 20,
-        duration: 2,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: imgRef4.current,
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 2
-        }
+      // Desktop (1025px and up)
+      media.add("(min-width: 1025px)", () => {
+        gsap.to(imgRef4.current, {
+          x: 350,
+          rotate: 20,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef4.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Tablet (768px to 1024px)
+      media.add("(min-width: 768px) and (max-width: 1024px)", () => {
+        gsap.to(imgRef4.current, {
+          x: 250,
+          rotate: 20,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef4.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Mobile (767px and below)
+      media.add("(max-width: 767px)", () => {
+        gsap.to(imgRef4.current, {
+          x: 310,
+          rotate: 16,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef4.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
       });
     },
     { scope: secimgRef4 }
@@ -103,17 +249,52 @@ export function DribbbleSection() {
   // img 5 animation
   useGSAP(
     () => {
-      gsap.to(imgRef5.current, {
-        x: -350,
-        rotate: -30,
-        duration: 2,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: imgRef5.current,
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 2
-        }
+      // Desktop (1025px and up)
+      media.add("(min-width: 1025px)", () => {
+        gsap.to(imgRef5.current, {
+          x: -350,
+          rotate: -30,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef5.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Tablet (768px to 1024px)
+      media.add("(min-width: 768px) and (max-width: 1024px)", () => {
+        gsap.to(imgRef5.current, {
+          x: -250,
+          rotate: -30,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef5.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Mobile (767px and below)
+      media.add("(max-width: 767px)", () => {
+        gsap.to(imgRef5.current, {
+          x: -50,
+          rotate: -0,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef5.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
       });
     },
     { scope: secimgRef5 }
@@ -122,17 +303,52 @@ export function DribbbleSection() {
   // img 6 animation
   useGSAP(
     () => {
-      gsap.to(imgRef6.current, {
-        x: 350,
-        rotate: 30,
-        duration: 2,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: imgRef6.current,
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 2
-        }
+      // Desktop (1025px and up)
+      media.add("(min-width: 1025px)", () => {
+        gsap.to(imgRef6.current, {
+          x: 350,
+          rotate: 30,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef6.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Tablet (768px to 1024px)
+      media.add("(min-width: 768px) and (max-width: 1024px)", () => {
+        gsap.to(imgRef6.current, {
+          x: 250,
+          rotate: 30,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef6.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
+      });
+
+      // Mobile (767px and below)
+      media.add("(max-width: 767px)", () => {
+        gsap.to(imgRef6.current, {
+          x: 50,
+          rotate: 0,
+          duration: 2,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: imgRef6.current,
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 2
+          }
+        });
       });
     },
     { scope: secimgRef6 }
