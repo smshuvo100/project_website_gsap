@@ -466,10 +466,16 @@ menu
   body .mobile-menu .menu-wrapper .menu-social {
     margin-top: 60px;
   }
+  body .mobile-menu .menu-container {
+    height: calc(700px - 35px);
+  }
 }
 
 /*all mobile*/
 @media (max-width: 767px) {
+  body .mobile-menu .menu-container {
+    height: calc(700px - 35px);
+  }
   body .mobile-menu .menu-wrapper {
     flex-direction: column;
     align-items: start;
