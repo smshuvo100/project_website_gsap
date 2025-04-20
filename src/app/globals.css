@@ -424,7 +424,63 @@ menu
 .header-wrapper .header a img {
   filter: brightness(0) saturate(100%) invert(24%) sepia(1%) saturate(2881%) hue-rotate(183deg) brightness(93%) contrast(88%);
 }
+.mobile-menu .menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.mobile-menu .menu-wrapper .menu-social .info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: right;
+  margin-bottom: 39px;
+}
+.mobile-menu .menu-wrapper .menu-social .info a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.mobile-menu .menu-wrapper .menu-social .socials-m {
+  display: flex;
+  gap: 10px;
+}
+.mobile-menu .menu-wrapper .menu-social .socials-m .s-item img {
+  width: 40px;
+}
+.mobile-menu .menu-container {
+  height: calc(100vh - 35px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .mobile-menu .menu-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+  body .mobile-menu .menu-wrapper .menu-social .info {
+    text-align: left;
+  }
+  body .mobile-menu .menu-wrapper .menu-social {
+    margin-top: 60px;
+  }
+}
 
+/*all mobile*/
+@media (max-width: 767px) {
+  body .mobile-menu .menu-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+  body .mobile-menu .menu-wrapper .menu-social .info {
+    text-align: left;
+  }
+  body .mobile-menu .menu-wrapper .menu-social {
+    margin-top: 60px;
+  }
+}
 /* 
 ===========================
   hero-wrapper
@@ -893,7 +949,8 @@ section.dribbble-sec {
 
 /*all mobile*/
 @media (max-width: 767px) {
-  section.dribbble-sec {
+  body section.dribbble-sec {
+    padding-bottom: 100px;
     overflow-y: hidden;
   }
   body .dribbble-sec .dribbble-middle-text {
@@ -906,6 +963,19 @@ section.dribbble-sec {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
+  }
+  body .social-sec {
+    padding: 0 15px;
+  }
+  body .social-sec .social-item p {
+    font-size: 28px;
+  }
+  body .social-sec .social-item img {
+    width: 42px;
+  }
+  body .social-sec .social-item {
+    padding: 22px 0;
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -989,4 +1059,22 @@ footer.footer .boxa a.f-link p.ft1 {
 footer.footer .boxa a.f-link p.ft2 {
   font-size: 30px;
   line-height: 40px;
+}
+
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*all mobile*/
+@media (max-width: 767px) {
+  body footer.footer .boxa .f-link {
+    width: 100% !important;
+  }
+  body footer.footer .boxa {
+    flex-direction: column;
+    gap: 20px;
+  }
+  body footer.footer .boxa a.f-link.sm4 {
+    align-items: start;
+  }
 }

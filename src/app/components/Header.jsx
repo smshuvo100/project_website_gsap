@@ -48,25 +48,64 @@ function Header() {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMenuOpen ? "visible" : ""}`} aria-hidden={!isMenuOpen}>
         <div className="menu-container">
-          <nav className="menu-nav">
-            <ul>
-              <li>
-                <Link href="/" className="title-1 menu-link" onClick={closeMenu}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="title-1 menu-link" onClick={closeMenu}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="title-1 menu-link" onClick={closeMenu}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <div className="menu-wrapper">
+            <nav className="menu-nav">
+              <ul>
+                <li>
+                  <Link href="/" className="title-1 menu-link" onClick={closeMenu}>
+                    work
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="title-1 menu-link" onClick={closeMenu}>
+                    about
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="title-1 menu-link" onClick={closeMenu}>
+                    services
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/contact" className="title-1 menu-link" onClick={closeMenu}>
+                    team
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/contact" className="title-1 menu-link" onClick={closeMenu}>
+                    contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <div className="menu-social">
+              <div className="info">
+                <a className="email" href="mailto:hello@trionn">
+                  hello@trionn.com
+                </a>
+                <a href="tel:+889824182099">+88 98241 82099</a>
+              </div>
+              <div className="socials-m">
+                <a className="s-item" href="">
+                  <Image src="/images/dribble.svg" alt="" width={64} height={64} />
+                </a>
+                <a className="s-item" href="">
+                  <Image src="/images/linkedin.svg" alt="" width={64} height={64} />
+                </a>
+                <a className="s-item" href="">
+                  <Image src="/images/instagram.svg" alt="" width={64} height={64} />
+                </a>
+                <a className="s-item" href="">
+                  <Image src="/images/behance.svg" alt="" width={64} height={64} />
+                </a>
+                <a className="s-item" href="">
+                  <Image src="/images/facebook.svg" alt="" width={64} height={64} />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
