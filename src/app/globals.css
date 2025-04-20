@@ -1,3 +1,11 @@
+@media (min-width: 1140px) {
+}
+@media (min-width: 1320px) {
+}
+@media (min-width: 1440px) {
+}
+@media (min-width: 1920px) {
+}
 :root {
   /* color variables */
   --background: #eef3f3;
@@ -102,7 +110,7 @@ h6 span {
 @media (max-width: 767px) {
   .title-1 {
     font-size: 47px;
-    line-height: 36px;
+    line-height: 40px;
   }
   .title-2 {
     font-size: 42px;
@@ -110,7 +118,7 @@ h6 span {
   }
   .title-3 {
     font-size: 66px;
-    line-height: 50px;
+    line-height: 60px;
   }
   .text-1 {
     font-size: 16px;
@@ -121,8 +129,8 @@ h6 span {
     line-height: 31px;
   }
   .text-3 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 /*ipad*/
@@ -220,6 +228,15 @@ h6 span {
   display: flex;
   justify-content: space-between;
 }
+/*mobile*/
+@media (max-width: 767px) {
+  body .btn a {
+    padding: 15px 30px 17px 30px;
+  }
+  br {
+    display: none !important;
+  }
+}
 /* extra
 ------------
 */
@@ -231,6 +248,12 @@ h6 span {
 }
 .block {
   display: block;
+}
+/*all mobile*/
+@media (max-width: 767px) {
+  body .block {
+    display: inherit !important;
+  }
 }
 
 /* 
@@ -425,15 +448,6 @@ section.hero-wrapper h1.title-1.text-center {
   margin-bottom: 20px;
 } */
 
-@media (min-width: 1140px) {
-}
-@media (min-width: 1320px) {
-}
-@media (min-width: 1440px) {
-}
-@media (min-width: 1920px) {
-}
-
 .scroll-next-sec {
   display: flex;
   justify-content: center;
@@ -455,11 +469,29 @@ section.hero-wrapper h1.title-1.text-center {
   background: hsla(222, 6%, 67%, 0.2);
   color: var(--foreground);
 }
+/*all mobile*/
+@media (max-width: 767px) {
+  body .hero-wrapper .title-1.text-center {
+    margin-bottom: 10px;
+  }
+  body .hero-wrapper {
+    padding-top: 170px;
+  }
+  body .scroll-next-sec {
+    padding-bottom: 50px;
+  }
+}
+
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
 /* 
 ============================
   video-sec
 ============================
 */
+
 .video-sec {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -473,40 +505,16 @@ section.hero-wrapper h1.title-1.text-center {
   overflow: hidden;
   border-radius: 2rem;
 }
-
-/* ============================ */
-/* Update your CSS to use class instead of ID */
-.box {
-  height: 300px;
-  width: 300px;
-  background-color: crimson;
+/*all mobile*/
+@media (max-width: 767px) {
+  .video-sec {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
-#page1 {
-  height: 100vh;
-  width: 100%;
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#page2 {
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(14, 147, 191);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#page3 {
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(41, 245, 163);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* 
@@ -517,6 +525,7 @@ section.hero-wrapper h1.title-1.text-center {
 .recent-work-sec {
   padding-top: 150px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 .recent-work-sec .flex-box {
   display: flex;
@@ -544,13 +553,26 @@ section.hero-wrapper h1.title-1.text-center {
   position: relative;
 }
 
+/*all mobile*/
+@media (max-width: 767px) {
+  body .recent-work-sec .flex-box {
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+  }
+}
+
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
 /* 
 ============================
   right-img-section
 ============================
 */
 .right-img-section {
-  /* padding-top: 100px; */
+  overflow: hidden;
 }
 .right-img-section .flex-box {
   display: flex;
@@ -572,6 +594,34 @@ section.hero-wrapper h1.title-1.text-center {
 }
 .right-img-section .flex-box .img-box img {
   border-radius: 1.5rem;
+}
+/*all mobile*/
+@media (max-width: 767px) {
+  body .right-img-section .flex-box {
+    flex-direction: column-reverse;
+  }
+  body .right-img-section .flex-box .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .right-img-section .flex-box .img-box {
+    width: 100%;
+  }
+  body .right-img-section .flex-box .content .btn {
+    margin-top: 20px;
+  }
+  body .right-img-section.left-img-sec .flex-box {
+    flex-direction: column;
+  }
+  body .right-img-section {
+    padding-bottom: 50px;
+  }
+}
+
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* 
@@ -601,6 +651,9 @@ section.hero-wrapper h1.title-1.text-center {
   counter-sec
 ===========================
 */
+.counter-sec {
+  overflow: hidden;
+}
 .counter-sec .flex-2box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -642,6 +695,32 @@ section.hero-wrapper h1.title-1.text-center {
 }
 .counter-sec .flex-box.a2 {
   margin-top: 140px;
+}
+/*all mobile*/
+@media (max-width: 767px) {
+  body .counter-sec .flex-2box {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  body .counter-sec .flex-box .box2 .num {
+    font-size: 62px;
+    margin-bottom: 10px;
+  }
+  body .counter-sec .flex-box .box2 h3 {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  body .counter-sec .flex-box .box2 {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  body .counter-sec .flex-box.a2 {
+    margin-top: 0;
+  }
+}
+
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
 }
 /* 
 ===========================
@@ -803,11 +882,20 @@ section.hero-wrapper h1.title-1.text-center {
 }
 section.dribbble-sec {
   position: relative;
+  overflow: hidden;
 }
 .dribbble-sec .dribbble-posts .dribbble-img img {
   border-radius: 20px;
 }
 
+/* 
+=================================
+  jungle-sec
+=================================
+*/
+.jungle-sec {
+  overflow: hidden;
+}
 .jungle-sec .title-3 .block {
   background: linear-gradient(90deg, #e0eeee 50%, #252525 0);
   background-size: 200% 100%;

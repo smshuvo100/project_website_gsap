@@ -16,6 +16,23 @@ export function ClientTestimonial() {
         }}
         navigation={true}
         className="mySwiper"
+        breakpoints={{
+          // when window width is >= 320px (mobile)
+          320: {
+            slidesPerView: 1.1,
+            spaceBetween: 20
+          },
+          // when window width is >= 768px (tablet)
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 25
+          },
+          // when window width is >= 1024px (desktop)
+          1024: {
+            slidesPerView: 3.5,
+            spaceBetween: 30
+          }
+        }}
       >
         <SwiperSlide>
           <div className="item">
