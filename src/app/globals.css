@@ -957,7 +957,7 @@ section.dribbble-sec {
 @media (max-width: 767px) {
   body section.dribbble-sec {
     padding-bottom: 100px;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   body .dribbble-sec .dribbble-middle-text {
     max-width: 300px;

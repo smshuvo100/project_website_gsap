@@ -176,7 +176,7 @@ export function DribbbleSection() {
       // Mobile (767px and below)
       media.add("(max-width: 767px)", () => {
         gsap.to(imgRef3.current, {
-          x: -310,
+          x: -350,
           rotate: -16,
           duration: 2,
           ease: "power1.inOut",
@@ -230,7 +230,7 @@ export function DribbbleSection() {
       // Mobile (767px and below)
       media.add("(max-width: 767px)", () => {
         gsap.to(imgRef4.current, {
-          x: 310,
+          x: 350,
           rotate: 16,
           duration: 2,
           ease: "power1.inOut",
