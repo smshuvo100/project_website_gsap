@@ -907,6 +907,29 @@ section.hero-wrapper h1.title-1.text-center {
   direction: rtl;
 }
 
+.news-tracker.logo-tracker .ticker span {
+  background: rgba(29, 31, 34, 0.7);
+  border-color: #121315;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 25rem;
+  width: 25rem;
+  min-width: 25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+}
+.news-tracker.logo-tracker .ticker {
+  margin-bottom: 10px;
+}
+.news-tracker.logo-tracker h2 {
+  font-family: var(--font-secondary);
+  margin-bottom: 40px;
+}
+.news-tracker.logo-tracker {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 /* 
 ======================
   dribbble-sec
@@ -1025,6 +1048,45 @@ section.dribbble-sec {
 }
 .social-sec .social-item:hover {
   max-width: 1100px;
+}
+
+/* 
+=================================
+  sm-center-text-sec
+=================================
+*/
+.sm-center-text-sec {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+/* 
+=================================
+  sm-bg-text-sec
+=================================
+*/
+.sm-bg-text-sec .text-cont {
+  max-width: 690px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 130px;
+}
+.sm-bg-text-sec {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.sm-bg-text-sec .title-3.text-center {
+  line-height: 115px;
+  z-index: 1;
+  position: relative;
+}
+.sm-bg-text-sec .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000a6;
+  z-index: 0;
 }
 /* 
 ======================
