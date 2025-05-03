@@ -1,36 +1,46 @@
 "use client";
+import { BannerSection } from "../components/BannerSection";
 import { ClientTestimonial } from "../components/ClientTestimonial";
 import { CounterSection } from "../components/CounterSection";
-import { HeroAboutSection } from "../components/HeroAboutSection";
+import { HeroAllSection } from "../components/HeroAllSection";
 import { LogoTracker } from "../components/LogoTracker";
 import { PageTitle } from "../components/PageTitle";
+import { TextCounterSection } from "../components/TextCounterSection";
 import { WhoWeAre } from "../components/WhoWeAre";
 
 export default function About() {
   //await new Promise((resolve) => setTimeout(resolve, 5000));
   return (
     <>
-      <HeroAboutSection />
-      <section className="sm-center-text-sec">
-        <div className="container">
-          <div className="text-center">
-            <p className="text-3">
-              TRIONN® has a roaring 20+ years history
-              <br />
-              of empowering companies in the
-              <br />
-              corporate jungle.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="sm-bg-text-sec" className="sm-bg-text-sec" style={{ backgroundImage: "url('https://trionn.com/_next/static/media/lion.2b10529a.webp')" }}>
-        <div className="overlay"></div>
-        <div className="text-cont">
-          <h2 className="title-3 text-center">majestic designs since 2000</h2>
-        </div>
-      </section>
-      <WhoWeAre />
+      <HeroAllSection
+        id={"sm-bg-text-sec"}
+        title1={"a versatile"}
+        title2={"design agency."}
+        description={`Combining the latest trends in design, tech, branding and
+<br /> many other fields is what we do best. We don't settle to view
+<br /> the world from one perspective.`}
+      />
+      <TextCounterSection />
+      <BannerSection />
+
+      {/* 
+      BannerSection.jsx
+      
+      */}
+      <WhoWeAre
+        title1={"who"}
+        title2={"we are"}
+        description={`As an award-winning agency within
+                <br />
+                the digital jungle, TRIONN® transcends
+                <br />
+                aesthetics, crafting your vision into a<br />
+                legacy that endures.
+                <br />`}
+        paragraph={`We roar with creativity, staying updated with the latest tech to make your brand a formidable force in the digital wilderness and deliver exceptional website and app experiences.`}
+        btn_text={"About Us"}
+        btn_link={"/about"}
+      />
       <CounterSection />
       <PageTitle />
       <ClientTestimonial />

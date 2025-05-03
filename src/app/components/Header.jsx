@@ -52,7 +52,7 @@ function Header() {
             <nav className="menu-nav">
               <ul>
                 <li>
-                  <Link href="/" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/work" className="title-1 menu-link" onClick={closeMenu}>
                     work
                   </Link>
                 </li>
@@ -62,13 +62,13 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/services" className="title-1 menu-link" onClick={closeMenu}>
                     services
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="/contact" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/team" className="title-1 menu-link" onClick={closeMenu}>
                     team
                   </Link>
                 </li>

@@ -1088,6 +1088,50 @@ section.dribbble-sec {
   background: #000000a6;
   z-index: 0;
 }
+
+/* 
+======================
+  contact-sec
+======================
+*/
+.contact-sec {
+  padding-top: 100px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.form-group textarea,
+.form-group select,
+.form-group input {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-weight: 400;
+  color: #e0eeee;
+  border-width: 0;
+  border-color: rgba(224, 238, 238, 0.5);
+  background: rgba(31, 32, 34, 0.4);
+  font-size: 16px;
+  line-height: 26px;
+}
+.form-group select {
+  font-size: 19px;
+  line-height: 29px;
+  color: rgba(197, 252, 252, 0.4);
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+::placeholder {
+  font-size: 19px;
+  line-height: 29px;
+  color: rgba(197, 252, 252, 0.4);
+}
+
 /* 
 ======================
   footer

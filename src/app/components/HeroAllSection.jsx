@@ -6,7 +6,7 @@ import { HiOutlineArrowSmDown } from "react-icons/hi";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
-export function HeroAboutSection() {
+export function HeroAllSection({ title1, title2, description, id }) {
   const title1Ref = useRef(null);
   const title2Ref = useRef(null);
   const textRef = useRef(null);
@@ -65,21 +65,17 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         <div className="container">
           <h1 className="title-1 text-center">
             <span ref={title1Ref} className="block">
-              a versatile
+              {title1}
             </span>
             <span ref={title2Ref} className="block">
-              design agency.
+              {title2}
             </span>
           </h1>
           <div className="text" ref={textRef}>
-            <p className="text-center">
-              Combining the latest trends in design, tech, branding and
-              <br /> many other fields is what we do best. We don't settle to view
-              <br /> the world from one perspective.
-            </p>
+            <p className="text-center" dangerouslySetInnerHTML={{ __html: description }} />
             <div>
               <div className="scroll-next-sec">
-                <Link href="#sm-bg-text-sec">
+                <Link href={`#${id}`}>
                   <HiOutlineArrowSmDown />
                 </Link>
               </div>

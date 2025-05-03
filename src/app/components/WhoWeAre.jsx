@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import { useRef } from "react";
 
-export function WhoWeAre() {
+export function WhoWeAre({ title1, title2, description, paragraph, btn_text, btn_link }) {
   const whoWeAreRef = useRef(null);
   const text1Ref = useRef(null);
   const text2Ref = useRef(null);
@@ -58,32 +58,28 @@ export function WhoWeAre() {
             <div className="text">
               <h3 className="title-3 text-left" ref={whoWeAreRef}>
                 <span className="block sm1" ref={text1Ref}>
-                  who
+                  {title1}
                 </span>
                 <span className="block sm2" ref={text2Ref}>
-                  we are
+                  {title2}
                 </span>
               </h3>
 
-              <p className="text-3">
-                As an award-winning agency within
-                <br />
-                the digital jungle, TRIONN® transcends
-                <br />
-                aesthetics, crafting your vision into a<br />
-                legacy that endures.
-                <br />
-              </p>
+              <p className="text-3"></p>
+              <p className="text-3" dangerouslySetInnerHTML={{ __html: description }} />
             </div>
           </div>
           <div className="right-text">
             <div className="box1">
-              <p className="text-1">
-                We roar with creativity, staying updated with the latest tech to make your brand a formidable force in the digital wilderness and deliver exceptional website and app experiences.
-              </p>
-              <div className="btn">
-                <Link href="/about">About us</Link>
-              </div>
+              <p className="text-1" dangerouslySetInnerHTML={{ __html: paragraph }} />
+
+              {btn_link ? (
+                <div className="btn">
+                  <Link href={btn_link}>{btn_text}</Link>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>
