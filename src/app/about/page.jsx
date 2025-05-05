@@ -20,13 +20,15 @@ export default function About() {
 <br /> many other fields is what we do best. We don't settle to view
 <br /> the world from one perspective.`}
       />
-      <TextCounterSection />
-      <BannerSection />
+      <TextCounterSection
+        text={`TRIONN® has a roaring 20+ years history
+              <br />
+              of empowering companies in the
+              <br />
+              corporate jungle.`}
+      />
+      <BannerSection title={"majestic designs since 2000"} />
 
-      {/* 
-      BannerSection.jsx
-      
-      */}
       <WhoWeAre
         title1={"who"}
         title2={"we are"}

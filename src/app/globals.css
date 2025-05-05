@@ -94,6 +94,10 @@ h6 span {
   font-size: 160px;
   line-height: 145px;
 }
+.title-4 {
+  font-size: 48px;
+  line-height: 58px;
+}
 .text-1 {
   font-size: 20px;
   line-height: 30px;
@@ -212,6 +216,7 @@ h6 span {
 .btn {
   display: inline-flex;
 }
+.btn button,
 .btn a {
   font-size: 16px;
   display: flex;
@@ -227,6 +232,12 @@ h6 span {
 .btn-group {
   display: flex;
   justify-content: space-between;
+}
+.btn.form-btn {
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
 }
 /*mobile*/
 @media (max-width: 767px) {
@@ -795,10 +806,12 @@ section.hero-wrapper h1.title-1.text-center {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: hsla(222, 6%, 67%, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.client-testimonial .swiper-slide {
+  background: hsla(222, 6%, 67%, 0.2);
 }
 
 .swiper-slide img {
@@ -1015,6 +1028,7 @@ section.dribbble-sec {
 */
 .jungle-sec {
   overflow: hidden;
+  padding-top: 100px;
 }
 .jungle-sec .title-3 .block {
   background: linear-gradient(90deg, #e0eeee 50%, #252525 0);
@@ -1026,6 +1040,17 @@ section.dribbble-sec {
   position: relative;
 }
 
+/* 
+=================================
+  banner-parallax-se
+=================================
+*/
+.banner-parallax-sec {
+  height: 700px;
+  margin-top: 100px;
+  background-size: cover;
+  background-position: center center;
+}
 /* 
 =================================
   social-sec
@@ -1066,7 +1091,7 @@ section.dribbble-sec {
 =================================
 */
 .sm-bg-text-sec .text-cont {
-  max-width: 690px;
+  max-width: 750px;
   margin: 0 auto;
   padding-top: 150px;
   padding-bottom: 130px;
@@ -1132,6 +1157,90 @@ section.dribbble-sec {
   color: rgba(197, 252, 252, 0.4);
 }
 
+/* 
+======================
+  work-sec1
+======================
+*/
+.work-sec1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.img-text-box img {
+  border-radius: 32px;
+  margin-bottom: 30px;
+}
+.work-sec1 .sm-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.work-sec1 .sm-flex.sm2 {
+  flex-direction: row-reverse;
+}
+.container-w1 {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.container-w2 {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* 
+======================
+  services-sec
+======================
+*/
+.services-sec {
+  margin-bottom: 60px;
+}
+.services-sec .box {
+  background: rgba(31, 32, 34, 0.4);
+  border-radius: 1.5rem;
+  padding: 100px;
+  display: flex;
+}
+.services-sec .box .coll.sm1 {
+  width: 60%;
+}
+.services-sec .box .coll.sm2 {
+  width: 40%;
+}
+.services-sec .box .coll .list-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.services-sec .box .coll .list-flex .list-text p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+/* 
+======================
+  team-member slider
+======================
+*/
+.team-member {
+  padding-bottom: 100px;
+}
+.team-member .item img {
+  border-radius: 20px;
+}
+.team-member .item .text {
+  text-align: left;
+  margin-top: 16px;
+}
+.team-member .item .text .name {
+  font-size: 24px;
+  line-height: 34px;
+}
+.team-member .item .text .position {
+  font-size: 20px;
+  line-height: 30px;
+}
 /* 
 ======================
   footer

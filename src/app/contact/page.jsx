@@ -5,12 +5,19 @@ export default function page() {
       <HeroAllSection
         title1={"let's roarinto"}
         title2={"the wildtogether."}
-        description={`In the wilderness of change, our 
-                <br /> world's view will roar into a new
-                <br /> tomorrow and beyond.`}
+        description={`In the wilderness of change, our<br />
+      world's view will roar into a new<br />
+      tomorrow and beyond.`}
       />
+
+      {/* 
+      In the wilderness of change, our<br />
+      world's view will roar into a new<br />
+      tomorrow and beyond.
+      
+      */}
       <section className="contact-sec">
-        <div className="container">
+        <div className="container-w1">
           <div className="current-time">
             <div className="clock">
               <div className="hour hand"></div>
@@ -18,7 +25,7 @@ export default function page() {
               <div className="sec hand"></div>
             </div>
           </div>
-          <h2 className="title-2 ">get a quote</h2>
+
           <form className="contact-form">
             <div className="form-row">
               <div className="form-group">
@@ -82,6 +89,9 @@ export default function page() {
             <div className="form-group">
               <label for="message">Tell us about your project*</label>
               <textarea id="message" name="message" rows="5" placeholder="Ex. Hello, Trionn Design. We need help to make this project unique." required></textarea>
+            </div>
+            <div class="btn form-btn">
+              <button>Submit</button>
             </div>
           </form>
         </div>

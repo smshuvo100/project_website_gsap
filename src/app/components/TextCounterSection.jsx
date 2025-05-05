@@ -1,16 +1,11 @@
-export function TextCounterSection() {
+export function TextCounterSection({ text }) {
   return (
     <>
       <section className="sm-center-text-sec">
         <div className="container">
           <div className="text-center">
-            <p className="text-3">
-              TRIONN® has a roaring 20+ years history
-              <br />
-              of empowering companies in the
-              <br />
-              corporate jungle.
-            </p>
+            <p className="text-3" dangerouslySetInnerHTML={{ __html: text }} />
+            <p className="text-3"></p>
           </div>
         </div>
       </section>

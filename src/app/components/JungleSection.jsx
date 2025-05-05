@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
-export function JungleSection() {
+export function JungleSection({ title1, title2, title3, description }) {
   const jungleSecRef = useRef(null);
   const text1Ref = useRef(null);
   const text2Ref = useRef(null);
@@ -73,15 +73,16 @@ export function JungleSection() {
       <section className="jungle-sec" ref={jungleSecRef}>
         <h1 className="title-3 text-center">
           <span className="block sm1" ref={text1Ref}>
-            join our
+            {title1}
           </span>
           <span className="block sm2" ref={text2Ref}>
-            jungle
+            {title2}
           </span>
           <span className="block sm3" ref={text3Ref}>
-            trek
+            {title3}
           </span>
         </h1>
+        <p className="text-2 text-center" dangerouslySetInnerHTML={{ __html: description }} />
       </section>
     </>
   );

@@ -1,4 +1,5 @@
 import { HeroAllSection } from "../components/HeroAllSection";
+import { WorkSection1 } from "../components/WorkSection1";
 
 export default function page() {
   return (
@@ -11,6 +12,8 @@ export default function page() {
   <br /> many other fields is what we do best. We don't settle to view
   <br /> the world from one perspective.`}
       />
+      <WorkSection1 />
+      {/* WorkSection1.jsx */}
     </>
   );
 }
