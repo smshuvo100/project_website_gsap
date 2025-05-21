@@ -42,6 +42,7 @@ export function VideoSection() {
             toggleActions: "play none none none",
             scrub: 2,
             pin: true,
+            markers: false,
             onEnter: () => {
               gsap.to(videoRef.current, {
                 y: 0,

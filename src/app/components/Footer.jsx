@@ -57,15 +57,15 @@ function Footer() {
             <div className="text">
               <h3 className="title-3 text-left">
                 <span className="block sm1" ref={text1Ref}>
-                  time to
+                  ready to get
                 </span>
                 <span className="block sm2" ref={text2Ref}>
-                  roar!
+                  trusted?
                 </span>
               </h3>
             </div>
             <div className="btn">
-              <Link href="/about">Explore work</Link>
+              <Link href="/about">Start Your Project</Link>
             </div>
           </div>
         </div>
@@ -76,15 +76,17 @@ function Footer() {
           <div className="boxa">
             <a className="f-link sm1" href="">
               <p className="ft1">Email</p>
-              <p className="ft2">hello@trionn.com</p>
+              <p className="ft2">info@market-target.com</p>
             </a>
             <a className="f-link sm2" href="">
               <p className="ft1">Call</p>
-              <p className="ft2">0165841254</p>
+              <p className="ft2">+31 6 22750959</p>
             </a>
             <a className="f-link sm4" href="">
-              <p className="ft1">Skype</p>
-              <p className="ft2">sjsgjkh.100</p>
+              <p className="ft1">Address</p>
+              <p className="ft2">
+                Based in the Netherlands, <br /> serving clients worldwide
+              </p>
             </a>
           </div>
         </div>

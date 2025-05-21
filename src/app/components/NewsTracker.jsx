@@ -48,31 +48,31 @@ export function NewsTracker() {
     <section className="news-tracker" ref={newsTrackerRef}>
       <div className="ticker" ref={track1Ref}>
         <h2 className="ticker__run title-3">
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
-          <span> wild ideas! -</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
         </h2>
       </div>
 
       <div className="ticker arabic" ref={track2Ref}>
         <h2 className="ticker__run title-3">
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
-          <span> let's dive in! -</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
         </h2>
       </div>
     </section>

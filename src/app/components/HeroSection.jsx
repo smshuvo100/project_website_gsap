@@ -91,17 +91,17 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         <div className="container">
           <h1 className="title-1 text-center">
             <span ref={title1Ref} className="block">
-              roar in the
+              No Visibility.
             </span>
             <span ref={title2Ref} className="block">
-              digital wilderness.
+              No Trust. No Leads.
             </span>
           </h1>
           <div className="text" ref={textRef}>
             <p className="text-center">
-              We roar with success, delivering the <br />
-              TRIONN®through versatile design, branding and the
-              <br /> latesttech development to companies.
+              They won't hire you if they can’t find you — and visibility alone won't win their trust.
+              <br /> Market Target helps service businesses rank higher, look sharper, and convert better with technical SEO,
+              <br /> strategic branding, and high-impact video.
             </p>
             <div>
               <div className="scroll-next-sec">
@@ -113,10 +113,10 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </div>
           <div className="btn-group">
             <div className="btn" ref={btn1Ref}>
-              <Link href="/about">Explore work</Link>
+              <Link href="/about">View Our Work</Link>
             </div>
             <div className="btn" ref={btn2Ref}>
-              <Link href="/about">Get in touch</Link>
+              <Link href="/about">Start Your Project</Link>
             </div>
           </div>
         </div>

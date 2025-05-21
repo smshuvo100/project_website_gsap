@@ -1,7 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Link from "next/link";
 import { useRef } from "react";
 export function RecentWorkSection() {
   /* 
@@ -60,24 +59,19 @@ export function RecentWorkSection() {
             <div className="text">
               <h3 className="title-3 text-left">
                 <span className="block sm1" ref={text1Ref}>
-                  recent
+                  what
                 </span>
                 <span className="block sm2" ref={text2Ref}>
-                  work
+                  we do
                 </span>
               </h3>
 
               <p className="text-2">
-                In the creative wilderness,
+                We help consultants, agencies, trades, and local service brands gain visibility and convert attention into action. Every strategy we create blends three powerful elements:
                 <br />
-                clients find our work truly
-                <br />
-                beloved.
               </p>
             </div>
-            <div className="btn">
-              <Link href="/about">Explore work</Link>
-            </div>
+            <div className="btn">{/* <Link href="/about">Explore work</Link> */}</div>
           </div>
         </div>
       </section>

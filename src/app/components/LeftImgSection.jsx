@@ -61,8 +61,8 @@ export function LeftImgSection() {
               </Link>
             </div>
             <div className="content" ref={content1Ref}>
-              <h2 className="title-2">imusic</h2>
-              <p className="text-1">Research, UX, UI Design</p>
+              <h2 className="title-2">brand development</h2>
+              <p className="text-1">Build a cohesive, trustworthy identity that clients remember.</p>
 
               <div className="btn">
                 <Link href="/about">View project</Link>

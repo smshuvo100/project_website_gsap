@@ -19,21 +19,30 @@ export default function Home() {
       <HeroSection />
       <VideoSection />
       <RecentWorkSection />
-      <RightImgSection title={"loftloom"} description={"UI Design, UX, Wireframe"} images={"loftloom-main-landscape.webp"} />
+      <RightImgSection title={"technical seo"} description={"Improve your rankings with clean, fast, search-optimized foundations."} images={"loftloom-main-landscape.webp"} />
       <LeftImgSection />
-      <RightImgSection title={"technis"} description={"UI Design, UX, Wireframe"} images={"technis-main-landscape.webp"} />
+      <RightImgSection
+        title={"video & drone content "}
+        description={"Stand out with cinematic, story-driven visuals designed to educate, impress, and convert."}
+        images={"technis-main-landscape.webp"}
+      />
+      <WhoWeAre
+        title1={"work that"}
+        title2={"performs"}
+        paragraph={`From professional service websites
+                <br />
+                to branded aerial videos — our work builds
+                <br />
+                credibility and converts attention into leads.`}
+        btn_text={"See Case Studies"}
+        btn_link={"/about"}
+      />
       <WhoWeAre
         title1={"who"}
         title2={"we are"}
-        description={`As an award-winning agency within
-                <br />
-                the digital jungle, TRIONN® transcends
-                <br />
-                aesthetics, crafting your vision into a<br />
-                legacy that endures.
-                <br />`}
-        paragraph={`We roar with creativity, staying updated with the latest tech to make your brand a formidable force in the digital wilderness and deliver exceptional website and app experiences.`}
-        btn_text={"About Us"}
+        description={`Market Target is a results-driven digital<br /> partner for service-based businesses.<br /> Our team brings together SEO engineers,<br /> brand designers, content strategists,<br /> and drone video pros — all working<br /> toward one goal: helping you grow.`}
+        paragraph={`We don’t do fluff. We do focused,<br /> aligned digital marketing that drives visibility,<br /> trust, and leads.`}
+        btn_text={"Meet the Team"}
         btn_link={"/about"}
       />
       <CounterSection />
