@@ -1,9 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 import { useRef } from "react";
-
-export function JungleSection({ title1, title2, title3, description }) {
+export function JungleSection({ title1, title2, title3, description, btn_text, btn_link }) {
   const jungleSecRef = useRef(null);
   const text1Ref = useRef(null);
   const text2Ref = useRef(null);
@@ -83,6 +83,14 @@ export function JungleSection({ title1, title2, title3, description }) {
           </span>
         </h1>
         <p className="text-2 text-center" dangerouslySetInnerHTML={{ __html: description }} />
+
+        {btn_link ? (
+          <div className="btn">
+            <Link href={btn_link}>{btn_text}</Link>
+          </div>
+        ) : (
+          ""
+        )}
       </section>
     </>
   );

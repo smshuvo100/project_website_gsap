@@ -5,7 +5,7 @@ export function ServicesSection({ title, description, list1, list2 }) {
         <div className="container">
           <div className="box">
             <div className="coll sm1">
-              <h2 className="title-2">{title}</h2>
+              <h2 className="title-2" dangerouslySetInnerHTML={{ __html: title }} />
             </div>
             <div className="coll sm2">
               <p className="text-1">{description}</p>

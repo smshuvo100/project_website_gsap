@@ -9,28 +9,26 @@ export default function page() {
   return (
     <>
       <HeroAllSection
-        title1={"each and every one"}
-        title2={"of usis a digital lion."}
-        description={`If you also see yourself as the king or<br /> 
-            queen of the digital jungle, you might be<br /> 
-            one of us. Drop us a line.`}
+        title1={"the team behind"}
+        title2={"market target"}
+        description={`Strategists, creators, and marketers with one goal:<br/> helping service businesses grow with SEO,<br/>  branding, and video that performs.`}
       />
 
-      <TextCounterSection text={`Our work excels, driven by our<br /> wild and creative team, delivering<br /> the highest quality`} />
-      <BannerSection title={"born with creative instincts."} />
+      <TextCounterSection text={`Our results come from experience — not hype.<br/> Every project is powered by a team that understands<br/> both strategy and execution.`} />
+      <BannerSection title={"built on strategy. backed by results."} />
 
-      <WhoWeAre
-        description={`In the heart of our<br />
-                wild team, we find
-                <br />
-                our strength.
-                <br />`}
-        paragraph={`We roar with creativity, staying updated with the latest tech to make your brand a formidable force in the digital wilderness and deliver exceptional website and app experiences.`}
-      />
+      <WhoWeAre description={`Meet the people behind the work — SEO specialists, branding experts, and video creatives focused on moving your business forward.`} />
 
       <TeamMemberSection />
 
-      <JungleSection title1={"wanna"} title2={"join"} title3={"trionn?"} description={`We are always looking for the best <br />talent in the digital jungle.`} />
+      <JungleSection
+        title1={"we're hiring"}
+        title2={"talented marketers"}
+        title3={"& creators"}
+        description={`Passionate about SEO, storytelling, <br/>or digital content? We’d love to hear from you.`}
+        btn_text={"Meet the Team"}
+        btn_link={"/about"}
+      />
 
       <section className="banner-parallax-sec" style={{ backgroundImage: "url(https://trionn.com/_next/static/media/lion2.813c8d36.webp)" }}></section>
     </>

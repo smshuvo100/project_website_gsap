@@ -14,32 +14,25 @@ export default function About() {
     <>
       <HeroAllSection
         id={"sm-bg-text-sec"}
-        title1={"a versatile"}
-        title2={"design agency."}
-        description={`Combining the latest trends in design, tech, branding and
-<br /> many other fields is what we do best. We don't settle to view
-<br /> the world from one perspective.`}
+        title1={"a strategic growth partner"}
+        title2={"for service businesses."}
+        description={`We help service brands get found,<br/> build trust, and win clients — using data-backed SEO,<br/> compelling branding, and high-impact video.`}
       />
       <TextCounterSection
-        text={`TRIONN® has a roaring 20+ years history
-              <br />
-              of empowering companies in the
-              <br />
-              corporate jungle.`}
+        text={`Market Target is built on 10+ years<br/> of helping service-based businesses<br/> rise above the noise.`}
+        paragraph={`We've helped agencies, consultants,<br/> and tradespeople turn traffic into leads and<br/> leads into revenue — without wasting a cent.`}
       />
-      <BannerSection title={"majestic designs since 2000"} />
+
+      <BannerSection title={"strategic. sreative. built to convert."} />
 
       <WhoWeAre
         title1={"who"}
         title2={"we are"}
-        description={`As an award-winning agency within
-                <br />
-                the digital jungle, TRIONN® transcends
-                <br />
-                aesthetics, crafting your vision into a<br />
-                legacy that endures.
+        description={`We’re not a creative agency.<br /> We’re a results agency.
+ Market Target combines deep<br /> technical SEO, brand positioning, and high-quality<br /> video to help service-based businesses increase visibility, <br />build credibility, and generate real leads.
+
                 <br />`}
-        paragraph={`We roar with creativity, staying updated with the latest tech to make your brand a formidable force in the digital wilderness and deliver exceptional website and app experiences.`}
+        paragraph={`We stay ahead of algorithm changes, design trends, and buyer behavior so you don’t have to. We bring measurable clarity to your online presence.`}
         btn_text={"About Us"}
         btn_link={"/about"}
       />

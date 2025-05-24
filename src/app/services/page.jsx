@@ -8,69 +8,56 @@ import { WhoWeAre } from "../components/WhoWeAre";
 export default function page() {
   return (
     <>
+      {/* we help you get found, 
+    trusted, and chosen. 
+    */}
       <HeroAllSection
         id={"secrion1"}
-        title1={"experience our"}
-        title2={"wild digital magic."}
-        description={`Combining the latest trends in design, tech, branding and
-  <br /> many other fields is what we do best. We don't settle to view
-  <br /> the world from one perspective.`}
+        title1={"we help you get found,"}
+        title2={"trusted, and chosen."}
+        description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
       />
 
-      <TextCounterSection
-        text={`In the wild digital realm, we craft<br />
-          products that roar with user<br />
-          friendly innovation.`}
-      />
-      <BannerSection title={"boundless creative realm."} />
+      <TextCounterSection text={`We help service businesses turn attention<br /> into action — with technical precision, compelling<br /> messaging, and scroll-stopping visuals.<br />`} />
+      <BannerSection title={"strategy meets execution. results follow."} />
 
       <WhoWeAre
-        description={`We're here to make tech businesses roar in the digital<br />
-jungle, crafting valuable impact through design,<br />
-branding, and development services.`}
-        paragraph={`Challenges are the soil where our growth blossoms. Armed with digital prowess, we fearlessly overcome them. Bring your branding, web design, and creative challenges; our lionhearted approach will leave a lasting impression.`}
-        btn_text={"About Us"}
-        btn_link={"/about"}
-      />
-      <ServicesSection
-        title={"design"}
-        description={`Your designs, a fierce roar in the digital wilderness, carve an indelible social footprint, capturing the very essence of your unique identity.`}
-        list1={`<p>User interface</p>
-                  <p>User experience</p>
-                  <p>Websites</p>
-                  <p>Visual design</p>
-                  <p>Prototypes</p>`}
-        list2={`<p>Web & Mobile apps</p>
-                  <p>SaaS product design</p>
-                  <p>Design systems</p>
-                  <p>Interaction design</p>`}
+        description={`We work with service businesses that want more than just traffic — they want trust, visibility, and qualified leads. Every service we offer is focused on one thing: measurable growth.<br />`}
       />
 
       <ServicesSection
-        title={"development"}
-        description={`In this design jungle, we don't just roar concepts; we bring them to life with practicality, emphasizing micro animations and interactions.`}
-        list1={`<p>React JS</p>
-                  <p>Next JS</p>
-                  <p>Node JS</p>
-                  <p>Angular JS</p>
-                  <p>WordPress</p>`}
-        list2={`<p>HTML5 & CSS3</p>
-                  <p>LESS & SASS</p>
-                  <p>Bootstrap</p>
-                  <p>Tailwind</p>
-                  <p>Foundation</p>`}
+        title={`seo that gets <br />you found`}
+        description={`We audit, fix, and optimize your site from the ground up — site structure, speed, schema, and content — so you rank higher and stay there.`}
+        list1={`<p>Site audits</p>
+                  <p>Keyword strategy</p>
+                  <p>Core Web Vitals</p>
+                  <p>Structured data</p>
+                  `}
+        list2={`<p>Local SEO</p>
+                  <p>On-page SEO</p>
+                  <p>Performance optimization</p>`}
       />
 
       <ServicesSection
-        title={"branding"}
-        description={`Our goal is your brand's wild influence. Exclusive logos, mockups, and corporate identities make your unique value stand out.`}
-        list1={`<p>Visual identity</p>
-                  <p>Branding strategy</p>
-                  <p>Mockups</p>`}
-        list2={`<p>Graphic designs</p>
-                  <p>Style guide</p>
-                  <p>Typography</p>`}
+        title={`video that builds trust and converts`}
+        description={`We create short-form, cinematic, and aerial video content that shows your expertise and elevates your brand across web and social.`}
+        list1={`<p>Drone videography</p>
+                  <p>Service explainers</p>
+                  <p>Social video content</p>`}
+        list2={`<p>Brand overviews</p>
+                  <p>ouTube & web-ready formats</p>`}
       />
+
+      <ServicesSection
+        title={`branding that makes you the obvious choice`}
+        description={`We craft brands that are consistent, credible, and easy to choose — from logos and color systems to tone of voice and trust-building assets.`}
+        list1={`<p>Brand positioning</p>
+                  <p>Messaging frameworks</p>
+                  <p>Visual identity</p>`}
+        list2={`<p>Logo & typography</p>
+                  <p>Style guides</p>`}
+      />
+
       <LogoTracker />
     </>
   );

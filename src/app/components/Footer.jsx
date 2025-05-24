@@ -41,7 +41,7 @@ function Footer() {
         backgroundPositionX: "100%",
         scrollTrigger: {
           trigger: recentWorkSecRef.current,
-          start: "top 60%",
+          start: "top 50%",
           end: "bottom 70%",
           scrub: 2
         }

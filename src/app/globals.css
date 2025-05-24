@@ -87,8 +87,8 @@ h6 span {
   text-transform: lowercase;
 }
 .title-2 {
-  font-size: 77px;
-  line-height: 77px;
+  font-size: 68px;
+  line-height: 70px;
 }
 .title-3 {
   font-size: 160px;
@@ -1039,7 +1039,12 @@ section.dribbble-sec {
   -webkit-background-clip: text;
   position: relative;
 }
-
+.jungle-sec .btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 40px;
+}
 /* 
 =================================
   banner-parallax-se
@@ -1084,14 +1089,16 @@ section.dribbble-sec {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-
+.sm-center-text-sec .text-3 {
+  margin-bottom: 20px;
+}
 /* 
 =================================
   sm-bg-text-sec
 =================================
 */
 .sm-bg-text-sec .text-cont {
-  max-width: 750px;
+  max-width: 860px;
   margin: 0 auto;
   padding-top: 150px;
   padding-bottom: 130px;
@@ -1119,9 +1126,7 @@ section.dribbble-sec {
   contact-sec
 ======================
 */
-.contact-sec {
-  padding-top: 100px;
-}
+
 .form-group {
   display: flex;
   flex-direction: column;

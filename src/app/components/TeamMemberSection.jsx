@@ -52,8 +52,8 @@ export function TeamMemberSection() {
           <div className="item">
             <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
             <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
+              <p className="name">Alex Janssen</p>
+              <p className="position">SEO Lead</p>
             </div>
           </div>
         </SwiperSlide>
@@ -61,8 +61,8 @@ export function TeamMemberSection() {
           <div className="item">
             <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
             <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
+              <p className="name">Mila Bakker</p>
+              <p className="position">Brand Strategist</p>
             </div>
           </div>
         </SwiperSlide>
@@ -70,53 +70,8 @@ export function TeamMemberSection() {
           <div className="item">
             <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
             <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
-            <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
-            <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
-            <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
-            <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <Image src="/images/sunny_rathod.webp" alt="member" width={1000} height={1200} />
-            <div className="text">
-              <p className="name">Albert Mizuno</p>
-              <p className="position">Founder of The Mizuno</p>
+              <p className="name">Tom van Dijk</p>
+              <p className="position">Video Director</p>
             </div>
           </div>
         </SwiperSlide>
