@@ -1,6 +1,29 @@
+"use client";
+import { useState } from "react";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { TextCounterSection } from "../components/TextCounterSection";
 export default function page() {
+  const [status, setStatus] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      setStatus("Message sent successfully!");
+      e.target.reset();
+    } else {
+      setStatus("Failed to send message. Please try again.");
+    }
+  };
   return (
     <>
       <HeroAllSection
@@ -13,46 +36,34 @@ export default function page() {
 
       <section className="contact-sec">
         <div className="container-w1">
-          <div className="current-time">
-            <div className="clock">
-              <div className="hour hand"></div>
-              <div className="min hand"></div>
-              <div className="sec hand"></div>
-            </div>
-          </div>
-
-          <form className="contact-form">
-            {/* Name */}
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="name">Name*</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required />
               </div>
 
-              {/* Email */}
               <div className="form-group">
                 <label htmlFor="email">Email*</label>
                 <input type="email" id="email" name="email" placeholder="Your email address" required />
               </div>
             </div>
 
-            {/* Phone & Company */}
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
               </div>
               <div className="form-group">
-                <label htmlFor="company">Company/Organization</label>
-                <input type="text" id="company" name="company" placeholder="Ex. Trionn" />
+                <label htmlFor="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Company name" />
               </div>
             </div>
 
-            {/* Project Type & Budget */}
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="project-type">Project Type*</label>
-                <select id="project-type" name="project-type" required defaultValue="">
+                <label htmlFor="projectType">Project Type*</label>
+                <select id="projectType" name="projectType" required>
                   <option value="" disabled>
                     Select project type
                   </option>
@@ -63,8 +74,8 @@ export default function page() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="budget">Project Budget (USD)*</label>
-                <select id="budget" name="budget" required defaultValue="">
+                <label htmlFor="budget">Project Budget*</label>
+                <select id="budget" name="budget" required>
                   <option value="" disabled>
                     Select budget
                   </option>
@@ -76,10 +87,9 @@ export default function page() {
               </div>
             </div>
 
-            {/* Referral Source */}
             <div className="form-group">
               <label htmlFor="referral">How did you hear about us?</label>
-              <select id="referral" name="referral" defaultValue="">
+              <select id="referral" name="referral">
                 <option value="" disabled>
                   Select
                 </option>
@@ -90,16 +100,16 @@ export default function page() {
               </select>
             </div>
 
-            {/* ✅ This is the field you asked for */}
             <div className="form-group">
               <label htmlFor="message">Tell us about your project*</label>
-              <textarea id="message" name="message" rows="5" placeholder="Ex. Hello, we need help making this project unique." required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us more..." required></textarea>
             </div>
 
-            {/* Submit Button */}
             <div className="btn form-btn">
               <button type="submit">Submit</button>
             </div>
+
+            {status && <p style={{ marginTop: "1rem" }}>{status}</p>}
           </form>
         </div>
       </section>
