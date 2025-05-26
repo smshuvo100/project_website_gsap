@@ -1167,6 +1167,12 @@ section.dribbble-sec {
   work-sec1
 ======================
 */
+.work-sec1 ul {
+  margin-left: 17px;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 27px;
+}
 .work-sec1 {
   padding-top: 60px;
   padding-bottom: 60px;

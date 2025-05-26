@@ -1,18 +1,19 @@
+"use client";
 import { HeroAllSection } from "../components/HeroAllSection";
+import { LogoTracker } from "../components/LogoTracker";
 import { WorkSection1 } from "../components/WorkSection1";
-
 export default function page() {
   return (
     <>
       <HeroAllSection
         id={"sm-bg-text-sec"}
-        title1={"our creative roar"}
-        title2={"defines ourlegacy."}
-        description={`Combining the latest trends in design, tech, branding and
-  <br /> many other fields is what we do best. We don't settle to view
-  <br /> the world from one perspective.`}
+        title1={"work that builds trust"}
+        title2={"and drives results"}
+        description={`Explore how we help service businesses stand out,<br/> rank higher, and convert better — through SEO, branding,<br/> and aerial content that moves people.`}
       />
       <WorkSection1 />
+
+      <LogoTracker />
       {/* WorkSection1.jsx */}
     </>
   );
