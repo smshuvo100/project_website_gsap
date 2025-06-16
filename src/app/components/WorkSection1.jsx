@@ -9,7 +9,7 @@ export function WorkSection1() {
             </div>
             <div className="content">
               <h2 className="title-4">
-                <span>drone bideography</span>
+                <span>drone bibliography</span>
               </h2>
               <p className="text-1">
                 Stunning aerial visuals that elevate your brand presence and bring services to life — perfect

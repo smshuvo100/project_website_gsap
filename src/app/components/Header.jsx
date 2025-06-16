@@ -82,10 +82,10 @@ function Header() {
             </nav>
             <div className="menu-social">
               <div className="info">
-                <a className="email" href="mailto:hello@trionn">
-                  hello@trionn.com
+                <a className="email" href="mailto:info@market-target.com">
+                  info@market-target.com
                 </a>
-                <a href="tel:+889824182099">+88 98241 82099</a>
+                <a href="tel:+31622750959">+31 6 22750959</a>
               </div>
               <div className="socials-m">
                 <a className="s-item" href="">
