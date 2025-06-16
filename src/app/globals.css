@@ -665,6 +665,7 @@ section.hero-wrapper h1.title-1.text-center {
 .right-img-section .flex-box .content .btn {
   margin-top: 50px;
 }
+.right-img-section .flex-box .img-box video,
 .right-img-section .flex-box .img-box img {
   border-radius: 1.5rem;
 }

@@ -19,13 +19,9 @@ export default function Home() {
       <HeroSection />
       <VideoSection />
       <RecentWorkSection />
-      <RightImgSection title={"technical seo"} description={"Improve your rankings with clean, fast, search-optimized foundations."} images={"loftloom-main-landscape.webp"} />
+      <RightImgSection title={"technical seo"} description={"Improve your rankings with clean, fast, search-optimized foundations."} images={"seo.webp"} />
       <LeftImgSection />
-      <RightImgSection
-        title={"video & drone content "}
-        description={"Stand out with cinematic, story-driven visuals designed to educate, impress, and convert."}
-        images={"technis-main-landscape.webp"}
-      />
+      <RightImgSection title={"video & drone content "} description={"Stand out with cinematic, story-driven visuals designed to educate, impress, and convert."} images={"video2.mp4"} />
       <WhoWeAre
         title1={"work that"}
         title2={"performs"}

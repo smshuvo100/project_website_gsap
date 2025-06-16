@@ -57,7 +57,7 @@ export function LeftImgSection() {
           <div className="flex-box">
             <div className="img-box">
               <Link href="/">
-                <Image ref={images2Ref} src="/images/imusic-main-landscape.webp" alt="loftloom" width={1500} height={1000} priority />
+                <Image ref={images2Ref} src="/images/brand-building.webp" alt="loftloom" width={1500} height={1000} priority />
               </Link>
             </div>
             <div className="content" ref={content1Ref}>
