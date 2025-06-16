@@ -27,7 +27,7 @@ function Header() {
         <div className="container">
           <header className="header">
             <Link href="/">
-              <Image src="/images/logo.svg" alt="Logo" width={118} height={22} priority />
+              <Image src="/images/Logo-wh.png" alt="Logo" width={200} height={60} priority />
             </Link>
 
             <div className="toggle-container">

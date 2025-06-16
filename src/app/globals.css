@@ -300,6 +300,7 @@ menu
   width: 100%;
   z-index: 100;
   background-color: var(--background);
+  padding: 10px 0;
 }
 .header-wrapper .header {
   display: flex;
