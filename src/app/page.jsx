@@ -46,7 +46,7 @@ export default function Home() {
       <ClientTestimonial />
       <NewsTracker />
       <DribbbleSection />
-      <JungleSection title1={"join our"} title2={"jungle"} title3={"trek"} />
+      <JungleSection title1={"our"} title2={"socials"} />
       <SocialSection />
     </>
   );

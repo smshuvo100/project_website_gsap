@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -359,8 +358,8 @@ export function DribbbleSection() {
         <div className="container">
           <div className="dribbble-wrapper">
             <div className="dribbble-middle-text">
-              <Image src="/images/dribbble-logo.webp" alt="Logo" width={200} height={60} priority />
-              <p className="text-2">
+              <Image src="/images/Logo-wh.png" alt="Logo" width={300} height={100} priority />
+              {/* <p className="text-2">
                 Like a lion's roar echoing through
                 <br />
                 the jungle, a hint of our creative
@@ -369,7 +368,7 @@ export function DribbbleSection() {
               </p>
               <div className="btn">
                 <Link href="/about">Explore work</Link>
-              </div>
+              </div> */}
             </div>
             <div className="dribbble-posts">
               <div className="dribbble-img" ref={secimgRef1}>

@@ -70,7 +70,7 @@ export function VideoSection() {
         <div className="container">
           <div className="video-wrapper" ref={videoRef}>
             <video autoPlay loop muted>
-              <source src="/video/intro-video.mp4" type="video/mp4" />
+              <source src="/video/video1.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
