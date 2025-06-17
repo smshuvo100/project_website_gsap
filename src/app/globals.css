@@ -1179,6 +1179,7 @@ section.dribbble-sec {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.img-text-box video,
 .img-text-box img {
   border-radius: 32px;
   margin-bottom: 30px;
@@ -1193,10 +1194,14 @@ section.dribbble-sec {
 .container-w1 {
   max-width: 1240px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .container-w2 {
   max-width: 880px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* 
@@ -1310,5 +1315,11 @@ footer.footer .boxa a.f-link p.ft2 {
   }
   body footer.footer .boxa a.f-link.sm4 {
     align-items: start;
+  }
+  body .header-wrapper .header a img {
+    max-width: 100px;
+  }
+  body .work-sec1 .sm-flex {
+    flex-direction: column !important;
   }
 }

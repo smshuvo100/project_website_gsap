@@ -1,3 +1,4 @@
+import Image from "next/image";
 export function WorkSection1() {
   return (
     <>
@@ -5,11 +6,11 @@ export function WorkSection1() {
         <div className="container-w1">
           <div className="img-text-box">
             <div className="img-box">
-              <img alt="Trionn" loading="lazy" width="1240" height="700" src="https://trionn.com/assets/images/works/loftloom/loftloom-main.webp" />
+              <video src={`/video/video2.mp4`} width="100%" height="auto" muted autoPlay loop playsInline className="video-element" />
             </div>
             <div className="content">
               <h2 className="title-4">
-                <span>drone bibliography</span>
+                <span>drone videography</span>
               </h2>
               <p className="text-1">
                 Stunning aerial visuals that elevate your brand presence and bring services to life — perfect
@@ -28,7 +29,7 @@ export function WorkSection1() {
         <div className="container-w1">
           <div className="img-text-box">
             <div className="img-box">
-              <img alt="Trionn" loading="lazy" width="1240" height="700" src="https://trionn.com/assets/images/works/loftloom/loftloom-main.webp" />
+              <Image src={`/images/seo.webp`} width={1240} height={700} alt="alt" />
             </div>
             <div className="content">
               <h2 className="title-4">

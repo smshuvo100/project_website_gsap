@@ -30,7 +30,7 @@ export default function page() {
         btn_link={"/about"}
       />
 
-      <section className="banner-parallax-sec" style={{ backgroundImage: "url(https://trionn.com/_next/static/media/lion2.813c8d36.webp)" }}></section>
+      <section className="banner-parallax-sec" style={{ backgroundImage: "url('/images/banner.webp')" }}></section>
     </>
   );
 }
