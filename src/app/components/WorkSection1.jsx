@@ -53,26 +53,26 @@ export function WorkSection1() {
             <div className="call sm1">
               <div className="img-text-box">
                 <div className="img-box">
-                  <img alt="Trionn" loading="lazy" width="400" height="600" src="https://trionn.com/assets/images/works/8octa/8octa-main.webp" />
+                  <Image src={`/images/ecommerch.webp`} width={400} height={600} alt="alt" />
                 </div>
                 <div className="content">
                   <h2 className="title-4">
-                    <span>loftloom</span>
+                    <span>e-commerce</span>
                   </h2>
-                  <p className="text-1">UI Design, UX, Wireframe</p>
+                  <p className="text-1">E-commerce website design and development</p>
                 </div>
               </div>
             </div>
             <div className="call sm2">
               <div className="img-text-box">
                 <div className="img-box">
-                  <img alt="Trionn" loading="lazy" width="760" height="500" src="https://trionn.com/assets/images/works/imusic/imusic-main.webp" />
+                  <Image src={`/images/wordpress.webp`} width={760} height={345} alt="alt" />
                 </div>
                 <div className="content">
                   <h2 className="title-4">
-                    <span>loftloom</span>
+                    <span>wordpress</span>
                   </h2>
-                  <p className="text-1">UI Design, UX, Wireframe</p>
+                  <p className="text-1">Wordpress website design and development</p>
                 </div>
               </div>
             </div>
@@ -84,13 +84,13 @@ export function WorkSection1() {
         <div className="container-w2">
           <div className="img-text-box">
             <div className="img-box">
-              <img alt="Trionn" loading="lazy" width="880" height="580" src="https://trionn.com/assets/images/works/loftloom/loftloom-main.webp" />
+              <Image src={`/images/shopify.webp`} width={880} height={372} alt="alt" />
             </div>
             <div className="content">
               <h2 className="title-4">
-                <span>loftloom</span>
+                <span>shopify</span>
               </h2>
-              <p className="text-1">UI Design, UX, Wireframe</p>
+              <p className="text-1">Shopify website design and development</p>
             </div>
           </div>
         </div>
@@ -102,26 +102,26 @@ export function WorkSection1() {
             <div className="call sm1">
               <div className="img-text-box">
                 <div className="img-box">
-                  <img alt="Trionn" loading="lazy" width="400" height="600" src="https://trionn.com/assets/images/works/8octa/8octa-main.webp" />
+                  <Image src={`/images/webflow.webp`} width={400} height={209} alt="alt" />
                 </div>
                 <div className="content">
                   <h2 className="title-4">
-                    <span>loftloom</span>
+                    <span>webflow</span>
                   </h2>
-                  <p className="text-1">UI Design, UX, Wireframe</p>
+                  <p className="text-1">Webflow website design and development</p>
                 </div>
               </div>
             </div>
             <div className="call sm2">
               <div className="img-text-box">
                 <div className="img-box">
-                  <img alt="Trionn" loading="lazy" width="760" height="500" src="https://trionn.com/assets/images/works/imusic/imusic-main.webp" />
+                  <Image src={`/images/wix.webp`} width={760} height={427} alt="alt" />
                 </div>
                 <div className="content">
                   <h2 className="title-4">
-                    <span>loftloom</span>
+                    <span>wix</span>
                   </h2>
-                  <p className="text-1">UI Design, UX, Wireframe</p>
+                  <p className="text-1">Wix website design and development</p>
                 </div>
               </div>
             </div>
