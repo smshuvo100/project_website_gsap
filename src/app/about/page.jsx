@@ -23,7 +23,7 @@ export default function About() {
         paragraph={`We've helped agencies, consultants,<br/> and tradespeople turn traffic into leads and<br/> leads into revenue — without wasting a cent.`}
       />
 
-      <BannerSection title={"strategic. sreative. built to convert."} />
+      <BannerSection title={"strategic. sreative. built to convert."} bgImg={"/images/banner11.webp"} />
 
       <WhoWeAre
         title1={"who"}

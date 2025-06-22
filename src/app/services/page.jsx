@@ -19,7 +19,7 @@ export default function page() {
       />
 
       <TextCounterSection text={`We help service businesses turn attention<br /> into action — with technical precision, compelling<br /> messaging, and scroll-stopping visuals.<br />`} />
-      <BannerSection title={"strategy meets execution. results follow."} />
+      <BannerSection title={"strategy meets execution. results follow."} bgImg={"/images/banner.webp"} />
 
       <WhoWeAre
         description={`We work with service businesses that want more than just traffic — they want trust, visibility, and qualified leads. Every service we offer is focused on one thing: measurable growth.<br />`}

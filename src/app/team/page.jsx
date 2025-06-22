@@ -15,7 +15,7 @@ export default function page() {
       />
 
       <TextCounterSection text={`Our results come from experience — not hype.<br/> Every project is powered by a team that understands<br/> both strategy and execution.`} />
-      <BannerSection title={"built on strategy. backed by results."} />
+      <BannerSection title={"built on strategy. backed by results."} bgImg={"/images/banner11.webp"} />
 
       <WhoWeAre description={`Meet the people behind the work — SEO specialists, branding experts, and video creatives focused on moving your business forward.`} />
 
