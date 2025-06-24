@@ -30,8 +30,8 @@ export default function Home() {
                 to branded aerial videos — our work builds
                 <br />
                 credibility and converts attention into leads.`}
-        btn_text={"See Case Studies"}
-        btn_link={"/about"}
+        btn_text={"Contact Us"}
+        btn_link={"/contact"}
       />
       <WhoWeAre
         title1={"who"}
@@ -46,7 +46,7 @@ export default function Home() {
       <ClientTestimonial />
       <NewsTracker />
       <DribbbleSection />
-      <JungleSection title1={"our"} title2={"socials"} />
+      <JungleSection title1={"join"} title2={"with us"} />
       <SocialSection />
     </>
   );
