@@ -1,13 +1,11 @@
 "use client";
 
-import { ClientTestimonial } from "./components/ClientTestimonial";
 import { CounterSection } from "./components/CounterSection";
 import { DribbbleSection } from "./components/DribbbleSection";
 import { HeroSection } from "./components/HeroSection";
 import { JungleSection } from "./components/JungleSection";
 import { LeftImgSection } from "./components/LeftImgSection";
 import { NewsTracker } from "./components/NewsTracker";
-import { PageTitle } from "./components/PageTitle";
 import { RecentWorkSection } from "./components/RecentWorkSection";
 import { RightImgSection } from "./components/RightImgSection";
 import { SocialSection } from "./components/SocialSection";
@@ -42,8 +40,8 @@ export default function Home() {
         btn_link={"/about"}
       />
       <CounterSection />
-      <PageTitle />
-      <ClientTestimonial />
+      {/*   <PageTitle /> */}
+      {/*  <ClientTestimonial /> */}
       <NewsTracker />
       <DribbbleSection />
       <JungleSection title1={"join"} title2={"with us"} />

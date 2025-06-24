@@ -1,10 +1,8 @@
 "use client";
 import { BannerSection } from "../components/BannerSection";
-import { ClientTestimonial } from "../components/ClientTestimonial";
 import { CounterSection } from "../components/CounterSection";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { LogoTracker } from "../components/LogoTracker";
-import { PageTitle } from "../components/PageTitle";
 import { TextCounterSection } from "../components/TextCounterSection";
 import { WhoWeAre } from "../components/WhoWeAre";
 
@@ -37,8 +35,8 @@ export default function About() {
         btn_link={"/about"}
       />
       <CounterSection />
-      <PageTitle />
-      <ClientTestimonial />
+      {/*   <PageTitle /> */}
+      {/*  <ClientTestimonial /> */}
       <LogoTracker />
       {/* 
       HeroAboutSection.jsx
