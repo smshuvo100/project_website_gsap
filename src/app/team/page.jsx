@@ -14,12 +14,19 @@ export default function page() {
         description={`Strategists, creators, and marketers with one goal:<br/> helping service businesses grow with SEO,<br/>  branding, and video that performs.`}
       />
 
-      <TextCounterSection text={`Our results come from experience — not hype.<br/> Every project is powered by a team that understands<br/> both strategy and execution.`} />
-      <BannerSection title={"built on strategy. backed by results."} bgImg={"/images/banner11.webp"} />
+      <TextCounterSection
+        text={`Our results come from experience — not hype.<br/> Every project is powered by a team that understands<br/> both strategy and execution.`}
+      />
+      <BannerSection
+        title={"built on strategy. backed by results."}
+        bgImg={"/images/banner11.webp"}
+      />
 
-      <WhoWeAre description={`Meet the people behind the work — SEO specialists, branding experts, and video creatives focused on moving your business forward.`} />
+      <WhoWeAre
+        description={`Meet the people behind the work — SEO specialists, branding experts, and video creatives focused on moving your business forward.`}
+      />
 
-      <TeamMemberSection />
+      {/* <TeamMemberSection /> */}
 
       <JungleSection
         title1={"we're hiring"}
@@ -30,7 +37,10 @@ export default function page() {
         btn_link={"/about"}
       />
 
-      <section className="banner-parallax-sec" style={{ backgroundImage: "url('/images/banner.webp')" }}></section>
+      <section
+        className="banner-parallax-sec"
+        style={{ backgroundImage: "url('/images/banner.webp')" }}
+      ></section>
     </>
   );
 }

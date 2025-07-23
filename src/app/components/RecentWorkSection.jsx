@@ -25,8 +25,8 @@ export function RecentWorkSection() {
           trigger: recentWorkSecRef.current,
           start: "top 60%",
           end: "bottom 70%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: recentWorkSecRef }
@@ -44,8 +44,8 @@ export function RecentWorkSection() {
           trigger: recentWorkSecRef.current,
           start: "top 60%",
           end: "bottom 70%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: recentWorkSecRef }
@@ -67,11 +67,15 @@ export function RecentWorkSection() {
               </h3>
 
               <p className="text-2">
-                We help consultants, agencies, trades, and local service brands gain visibility and convert attention into action. Every strategy we create blends three powerful elements:
+                We help consultants, agencies, Service based businesses, and
+                local service brands gain visibility and convert attention into
+                action. Every strategy we create blends three powerful elements:
                 <br />
               </p>
             </div>
-            <div className="btn">{/* <Link href="/about">Explore work</Link> */}</div>
+            <div className="btn">
+              {/* <Link href="/about">Explore work</Link> */}
+            </div>
           </div>
         </div>
       </section>
