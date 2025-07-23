@@ -5,6 +5,7 @@ import { JungleSection } from "../components/JungleSection";
 import { TeamMemberSection } from "../components/TeamMemberSection";
 import { TextCounterSection } from "../components/TextCounterSection";
 import { WhoWeAre } from "../components/WhoWeAre";
+
 export default function page() {
   return (
     <>
@@ -27,6 +28,21 @@ export default function page() {
       />
 
       {/* <TeamMemberSection /> */}
+
+      <section className="sm-video3-sec">
+        <div className="video3-container">
+          <video
+            src={`/video/video3.mp4`}
+            width="100%"
+            height="auto"
+            muted
+            autoPlay
+            loop
+            playsInline
+            className="video-element"
+          />
+        </div>
+      </section>
 
       <JungleSection
         title1={"we're hiring"}

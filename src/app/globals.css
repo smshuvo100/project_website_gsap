@@ -1331,3 +1331,8 @@ footer.footer .boxa a.f-link p.ft2 {
     flex-direction: column !important;
   }
 }
+
+section.sm-video3-sec .video3-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
