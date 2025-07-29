@@ -11,7 +11,6 @@ function Footer() {
 
   // Register plugins
   gsap.registerPlugin(ScrollTrigger);
-
   // Text 1 animation
   useGSAP(
     () => {
@@ -22,10 +21,11 @@ function Footer() {
         backgroundPositionX: "100%",
         scrollTrigger: {
           trigger: recentWorkSecRef.current,
-          start: "top 60%",
-          end: "bottom 70%",
-          scrub: 2
-        }
+          /*  markers: true, */
+          start: "top 70%",
+          end: "bottom 100%",
+          scrub: 2,
+        },
       });
     },
     { scope: recentWorkSecRef }
@@ -41,10 +41,11 @@ function Footer() {
         backgroundPositionX: "100%",
         scrollTrigger: {
           trigger: recentWorkSecRef.current,
-          start: "top 50%",
-          end: "bottom 70%",
-          scrub: 2
-        }
+          /*      markers: true, */
+          start: "top 70%",
+          end: "bottom 100%",
+          scrub: 2,
+        },
       });
     },
     { scope: recentWorkSecRef }
