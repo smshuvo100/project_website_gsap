@@ -3,8 +3,16 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import { useRef } from "react";
+import AnimatedButton from "./AnimatedButton";
 
-export function WhoWeAre({ title1, title2, description, paragraph, btn_text, btn_link }) {
+export function WhoWeAre({
+  title1,
+  title2,
+  description,
+  paragraph,
+  btn_text,
+  btn_link,
+}) {
   const whoWeAreRef = useRef(null);
   const text1Ref = useRef(null);
   const text2Ref = useRef(null);
@@ -24,8 +32,8 @@ export function WhoWeAre({ title1, title2, description, paragraph, btn_text, btn
           trigger: whoWeAreRef.current,
           start: "top 40%",
           end: "bottom 80%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: whoWeAreRef }
@@ -43,8 +51,8 @@ export function WhoWeAre({ title1, title2, description, paragraph, btn_text, btn
           trigger: whoWeAreRef.current,
           start: "top 40%",
           end: "bottom 80%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: whoWeAreRef }
@@ -66,16 +74,22 @@ export function WhoWeAre({ title1, title2, description, paragraph, btn_text, btn
               </h3>
 
               <p className="text-3"></p>
-              <p className="text-3" dangerouslySetInnerHTML={{ __html: description }} />
+              <p
+                className="text-3"
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
             </div>
           </div>
           <div className="right-text">
             <div className="box1">
-              <p className="text-1" dangerouslySetInnerHTML={{ __html: paragraph }} />
+              <p
+                className="text-1"
+                dangerouslySetInnerHTML={{ __html: paragraph }}
+              />
 
               {btn_link ? (
                 <div className="btn">
-                  <Link href={btn_link}>{btn_text}</Link>
+                  <AnimatedButton href={btn_link}>{btn_text}</AnimatedButton>
                 </div>
               ) : (
                 ""

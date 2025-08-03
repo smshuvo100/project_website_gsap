@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import { useRef } from "react";
+import AnimatedButton from "./AnimatedButton";
 function Footer() {
   const recentWorkSecRef = useRef(null);
   const text1Ref = useRef(null);
@@ -66,7 +67,7 @@ function Footer() {
               </h3>
             </div>
             <div className="btn">
-              <Link href="/about">Start Your Project</Link>
+              <AnimatedButton href="/about">Start Your Project</AnimatedButton>
             </div>
           </div>
         </div>

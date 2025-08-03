@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { AudioPlayer } from "./AudioPlayer";
 import { ThemeToggle } from "./ThemeToggle";
+import AnimatedButton from "./AnimatedButton";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,13 +49,15 @@ function Header() {
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               >
                 <span>{isMenuOpen ? "Close" : "Menu"}</span>
-                <div className="menu-icon">
-                  {isMenuOpen ? (
-                    <RxCross1 style={{ fontSize: "1.25rem" }} />
-                  ) : (
-                    <RxHamburgerMenu style={{ fontSize: "1.25rem" }} />
-                  )}
-                </div>
+                <AnimatedButton style={{ borderRadius: "100%" }}>
+                  <div className="menu-icon">
+                    {isMenuOpen ? (
+                      <RxCross1 style={{ fontSize: "1.25rem" }} />
+                    ) : (
+                      <RxHamburgerMenu style={{ fontSize: "1.25rem" }} />
+                    )}
+                  </div>
+                </AnimatedButton>
               </button>
             </div>
           </header>

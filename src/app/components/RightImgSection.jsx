@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import AnimatedButton from "./AnimatedButton";
 
 export function RightImgSection({ title, description, images }) {
   const rightImgSecRef = useRef(null);
@@ -24,8 +25,8 @@ export function RightImgSection({ title, description, images }) {
           trigger: rightImgSecRef.current,
           start: "top 70%",
           end: "bottom 90%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: rightImgSecRef }
@@ -43,8 +44,8 @@ export function RightImgSection({ title, description, images }) {
           trigger: rightImgSecRef.current,
           start: "top 70%",
           end: "bottom 90%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: rightImgSecRef }
@@ -61,15 +62,33 @@ export function RightImgSection({ title, description, images }) {
             <h2 className="title-2">{title}</h2>
             <p className="text-1">{description}</p>
             <div className="btn">
-              <Link href="/about">Explore work</Link>
+              {/* <Link href="/about">Explore work</Link> */}
+              <AnimatedButton href="/about">Explore work</AnimatedButton>
             </div>
           </div>
           <div className="img-box">
             <Link href="/">
               {isVideo ? (
-                <video ref={mediaRef} src={`/video/${images}`} width="100%" height="auto" muted autoPlay loop playsInline className="video-element" />
+                <video
+                  ref={mediaRef}
+                  src={`/video/${images}`}
+                  width="100%"
+                  height="auto"
+                  muted
+                  autoPlay
+                  loop
+                  playsInline
+                  className="video-element"
+                />
               ) : (
-                <Image ref={mediaRef} src={`/images/${images}`} alt="loftloom" width={1500} height={1000} priority />
+                <Image
+                  ref={mediaRef}
+                  src={`/images/${images}`}
+                  alt="loftloom"
+                  width={1500}
+                  height={1000}
+                  priority
+                />
               )}
             </Link>
           </div>

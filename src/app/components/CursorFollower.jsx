@@ -2,6 +2,10 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 
+// ✅ Add this helper function to access CSS variable values
+const getCSSVariable = (name) =>
+  getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
 export default function CursorFollower() {
   useEffect(() => {
     const follower = document.getElementById("cursor-follower");
@@ -22,38 +26,52 @@ export default function CursorFollower() {
   useEffect(() => {
     const follower = document.getElementById("cursor-follower");
 
-    const hoverTargets = document.querySelectorAll(".hover-target");
+    // ✅ Mouse enter (delegated)
+    const handleMouseOver = (e) => {
+      const target = e.target.closest(".hover-target");
+      if (!target) return;
 
-    hoverTargets.forEach((el) => {
-      el.addEventListener("mouseenter", () => {
-        const type = el.getAttribute("data-cursor");
+      const primary = getCSSVariable("--primary");
+      const foreground = getCSSVariable("--foreground");
 
-        if (type === "transparent") {
-          gsap.to(follower, {
-            backgroundColor: "transparent",
-            border: "0px solid var(--primary)",
-            scale: 2,
-            duration: 0.3,
-          });
-        } else if (type === "red") {
-          gsap.to(follower, {
-            backgroundColor: "var(--primary)",
-            border: "none",
-            scale: 1,
-            duration: 0.3,
-          });
-        }
-      });
+      const type = target.getAttribute("data-cursor");
 
-      el.addEventListener("mouseleave", () => {
+      if (type === "transparent") {
         gsap.to(follower, {
-          backgroundColor: "var(--primary)",
-          border: "none",
-          scale: 1,
+          backgroundColor: "transparent",
+          scale: 2,
           duration: 0.3,
         });
+      } else {
+        gsap.to(follower, {
+          backgroundColor: primary,
+
+          scale: 1.5,
+          duration: 0.3,
+        });
+      }
+    };
+
+    const handleMouseOut = (e) => {
+      const target = e.target.closest(".hover-target");
+      if (!target) return;
+
+      const primary = getCSSVariable("--primary");
+
+      gsap.to(follower, {
+        border: "none",
+        scale: 1,
+        duration: 0.3,
       });
-    });
+    };
+
+    document.addEventListener("mouseover", handleMouseOver);
+    document.addEventListener("mouseout", handleMouseOut);
+
+    return () => {
+      document.removeEventListener("mouseover", handleMouseOver);
+      document.removeEventListener("mouseout", handleMouseOut);
+    };
   }, []);
 
   return <div id="cursor-follower" />;

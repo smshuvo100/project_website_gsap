@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { TextCounterSection } from "../components/TextCounterSection";
+import AnimatedButton from "../components/AnimatedButton";
 export default function page() {
   const [status, setStatus] = useState("");
   const handleSubmit = async (e) => {
@@ -14,7 +15,7 @@ export default function page() {
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
     });
 
     if (response.ok) {
@@ -32,7 +33,10 @@ export default function page() {
         description={`Need better visibility, stronger branding, <br/> or scroll-stopping video? Tell us what you<br/> need — we’ll help you get there.`}
       />
 
-      <TextCounterSection text={`Start your project — or just start the conversation.`} paragraph={`Tell us what’s not working — and where you want to go. We’ll respond with clear steps to help.`} />
+      <TextCounterSection
+        text={`Start your project — or just start the conversation.`}
+        paragraph={`Tell us what’s not working — and where you want to go. We’ll respond with clear steps to help.`}
+      />
 
       <section className="contact-sec">
         <div className="container-w1">
@@ -40,23 +44,45 @@ export default function page() {
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="name">Name*</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
               </div>
 
               <div className="form-group">
                 <label htmlFor="email">Email*</label>
-                <input type="email" id="email" name="email" placeholder="Your email address" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
               </div>
             </div>
 
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your phone number"
+                />
               </div>
               <div className="form-group">
                 <label htmlFor="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Company name" />
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company name"
+                />
               </div>
             </div>
 
@@ -102,11 +128,19 @@ export default function page() {
 
             <div className="form-group">
               <label htmlFor="message">Tell us about your project*</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us more..." required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us more..."
+                required
+              ></textarea>
             </div>
 
             <div className="btn form-btn">
-              <button type="submit">Submit</button>
+              <AnimatedButton as="button" type="submit">
+                Submit
+              </AnimatedButton>
             </div>
 
             {status && <p style={{ marginTop: "1rem" }}>{status}</p>}

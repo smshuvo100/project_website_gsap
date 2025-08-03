@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { HiMiniSpeakerWave, HiMiniSpeakerXMark } from "react-icons/hi2";
+import AnimatedButton from "./AnimatedButton";
 
 export function AudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -18,11 +19,21 @@ export function AudioPlayer() {
 
   return (
     <>
-      <button onClick={togglePlay} className="theme-toggle" aria-label={isPlaying ? "Stop sound" : "Play sound"}>
+      <AnimatedButton
+        as="button"
+        onClick={togglePlay}
+        className="theme-toggle"
+        aria-label={isPlaying ? "Stop sound" : "Play sound"}
+      >
         {isPlaying ? <HiMiniSpeakerWave /> : <HiMiniSpeakerXMark />}
-      </button>
+      </AnimatedButton>
 
-      <audio ref={audioRef} src="/audio/jungle.mp3" loop={true} preload="metadata" />
+      <audio
+        ref={audioRef}
+        src="/audio/jungle.mp3"
+        loop={true}
+        preload="metadata"
+      />
     </>
   );
 }

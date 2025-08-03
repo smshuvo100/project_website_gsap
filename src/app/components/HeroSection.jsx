@@ -5,6 +5,7 @@ import Link from "next/link";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import AnimatedButton from "./AnimatedButton";
 
 export function HeroSection() {
   const title1Ref = useRef(null);
@@ -14,8 +15,10 @@ export function HeroSection() {
   const btn2Ref = useRef(null);
   const heroWrapperRef = useRef(null);
   // title 1 animation
-  const btn1LinkRef = useRef(null);
-  const btn2LinkRef = useRef(null);
+
+  // ✅ Add this helper function at the top of your component
+  const getCSSVariable = (name) =>
+    getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
   /* 
 translate: none; rotate: none; scale: none; filter: none; transform: translate(0px); opacity: 1; visibility: inherit;"  
@@ -90,23 +93,6 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
     { scope: heroWrapperRef }
   );
 
-  // 🔥 Button hover animations
-  // ✅ Proper Hover Effect
-  const handleHover = (ref) => {
-    gsap.to(ref.current, {
-      scale: 1.1,
-      duration: 0.3,
-      ease: "power2.out",
-    });
-  };
-
-  const handleLeave = (ref) => {
-    gsap.to(ref.current, {
-      scale: 1,
-      duration: 0.3,
-      ease: "power2.out",
-    });
-  };
   return (
     <>
       <section className="hero-wrapper" ref={heroWrapperRef}>
@@ -121,7 +107,7 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </h1>
           <div className="text" ref={textRef}>
             <p className="text-center">
-              They won't hire you if they can’t find you — and visibility alone
+              They won't hire you if they can't find you — and visibility alone
               won't win their trust.
               <br /> Market Target helps service businesses rank higher, look
               sharper, and convert better with technical SEO,
@@ -129,34 +115,18 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
             </p>
             <div>
               <div className="scroll-next-sec">
-                <Link href="#video-sec">
+                <AnimatedButton href="#video-sec">
                   <HiOutlineArrowSmDown />
-                </Link>
+                </AnimatedButton>
               </div>
             </div>
           </div>
           <div className="btn-group">
             <div className="btn" ref={btn1Ref}>
-              <Link
-                href="/about"
-                ref={btn1LinkRef}
-                onMouseEnter={() => handleHover(btn1LinkRef)}
-                onMouseLeave={() => handleLeave(btn1LinkRef)}
-              >
-                View Our Work
-              </Link>
+              <AnimatedButton href="/work">View Our Work</AnimatedButton>
             </div>
             <div className="btn" ref={btn2Ref}>
-              <Link
-                className="hover-target"
-                data-cursor="transparent"
-                href="/about"
-                ref={btn2LinkRef}
-                onMouseEnter={() => handleHover(btn2LinkRef)}
-                onMouseLeave={() => handleLeave(btn2LinkRef)}
-              >
-                Start Your Project
-              </Link>
+              <AnimatedButton href="/about">Start Your Project</AnimatedButton>
             </div>
           </div>
         </div>

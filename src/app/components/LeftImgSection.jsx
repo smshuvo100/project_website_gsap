@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import AnimatedButton from "./AnimatedButton";
 export function LeftImgSection() {
   const leftImgSecRef = useRef(null);
   const content1Ref = useRef(null);
@@ -24,8 +25,8 @@ export function LeftImgSection() {
           trigger: leftImgSecRef.current,
           start: "top 70%",
           end: "bottom 90%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: leftImgSecRef }
@@ -43,8 +44,8 @@ export function LeftImgSection() {
           trigger: leftImgSecRef.current,
           start: "top 70%",
           end: "bottom 90%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: leftImgSecRef }
@@ -57,15 +58,24 @@ export function LeftImgSection() {
           <div className="flex-box">
             <div className="img-box">
               <Link href="/">
-                <Image ref={images2Ref} src="/images/brand-building.webp" alt="loftloom" width={1500} height={1000} priority />
+                <Image
+                  ref={images2Ref}
+                  src="/images/brand-building.webp"
+                  alt="loftloom"
+                  width={1500}
+                  height={1000}
+                  priority
+                />
               </Link>
             </div>
             <div className="content" ref={content1Ref}>
               <h2 className="title-2">brand development</h2>
-              <p className="text-1">Build a cohesive, trustworthy identity that clients remember.</p>
+              <p className="text-1">
+                Build a cohesive, trustworthy identity that clients remember.
+              </p>
 
               <div className="btn">
-                <Link href="/about">View project</Link>
+                <AnimatedButton href="/about">View project</AnimatedButton>
               </div>
             </div>
           </div>

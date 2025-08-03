@@ -5,6 +5,7 @@ import Link from "next/link";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import AnimatedButton from "./AnimatedButton";
 
 export function HeroAllSection({ title1, title2, description, id }) {
   const title1Ref = useRef(null);
@@ -23,10 +24,11 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
       gsap.from(title1Ref.current, {
         opacity: 0,
         filter: "blur(5px)",
-        transform: "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
+        transform:
+          "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
         duration: 2,
         delay: 0.5,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
@@ -37,10 +39,11 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
       gsap.from(title2Ref.current, {
         opacity: 0,
         filter: "blur(5px)",
-        transform: "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
+        transform:
+          "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
         duration: 2,
         delay: 1,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
@@ -53,7 +56,7 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         opacity: 0,
         duration: 2,
         delay: 1.5,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
@@ -72,12 +75,15 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
             </span>
           </h1>
           <div className="text" ref={textRef}>
-            <p className="text-center" dangerouslySetInnerHTML={{ __html: description }} />
+            <p
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
             <div>
               <div className="scroll-next-sec">
-                <Link href={`#${id}`}>
+                <AnimatedButton href={`#${id}`}>
                   <HiOutlineArrowSmDown />
-                </Link>
+                </AnimatedButton>
               </div>
             </div>
           </div>
