@@ -1,3 +1,4 @@
+// src/app/components/HeroSection.jsx
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
@@ -13,6 +14,8 @@ export function HeroSection() {
   const btn2Ref = useRef(null);
   const heroWrapperRef = useRef(null);
   // title 1 animation
+  const btn1LinkRef = useRef(null);
+  const btn2LinkRef = useRef(null);
 
   /* 
 translate: none; rotate: none; scale: none; filter: none; transform: translate(0px); opacity: 1; visibility: inherit;"  
@@ -23,10 +26,11 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
       gsap.from(title1Ref.current, {
         opacity: 0,
         filter: "blur(5px)",
-        transform: "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
+        transform:
+          "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
         duration: 2,
         delay: 0.5,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
@@ -37,10 +41,11 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
       gsap.from(title2Ref.current, {
         opacity: 0,
         filter: "blur(5px)",
-        transform: "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
+        transform:
+          "translate(0%, 24%) translate3d(0px, 0px, 0px) rotateX(18deg) skew(-18deg)",
         duration: 2,
         delay: 1,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
@@ -53,7 +58,7 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         opacity: 0,
         duration: 2,
         delay: 1.5,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
@@ -66,7 +71,7 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         opacity: 0,
         duration: 2,
         delay: 2,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
@@ -79,12 +84,29 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         opacity: 0,
         duration: 2,
         delay: 2.5,
-        ease: "Expo.easeOut"
+        ease: "Expo.easeOut",
       });
     },
     { scope: heroWrapperRef }
   );
 
+  // 🔥 Button hover animations
+  // ✅ Proper Hover Effect
+  const handleHover = (ref) => {
+    gsap.to(ref.current, {
+      scale: 1.1,
+      duration: 0.3,
+      ease: "power2.out",
+    });
+  };
+
+  const handleLeave = (ref) => {
+    gsap.to(ref.current, {
+      scale: 1,
+      duration: 0.3,
+      ease: "power2.out",
+    });
+  };
   return (
     <>
       <section className="hero-wrapper" ref={heroWrapperRef}>
@@ -99,8 +121,10 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </h1>
           <div className="text" ref={textRef}>
             <p className="text-center">
-              They won't hire you if they can’t find you — and visibility alone won't win their trust.
-              <br /> Market Target helps service businesses rank higher, look sharper, and convert better with technical SEO,
+              They won't hire you if they can’t find you — and visibility alone
+              won't win their trust.
+              <br /> Market Target helps service businesses rank higher, look
+              sharper, and convert better with technical SEO,
               <br /> strategic branding, and high-impact video.
             </p>
             <div>
@@ -113,10 +137,26 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </div>
           <div className="btn-group">
             <div className="btn" ref={btn1Ref}>
-              <Link href="/about">View Our Work</Link>
+              <Link
+                href="/about"
+                ref={btn1LinkRef}
+                onMouseEnter={() => handleHover(btn1LinkRef)}
+                onMouseLeave={() => handleLeave(btn1LinkRef)}
+              >
+                View Our Work
+              </Link>
             </div>
             <div className="btn" ref={btn2Ref}>
-              <Link href="/about">Start Your Project</Link>
+              <Link
+                className="hover-target"
+                data-cursor="transparent"
+                href="/about"
+                ref={btn2LinkRef}
+                onMouseEnter={() => handleHover(btn2LinkRef)}
+                onMouseLeave={() => handleLeave(btn2LinkRef)}
+              >
+                Start Your Project
+              </Link>
             </div>
           </div>
         </div>

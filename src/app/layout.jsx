@@ -1,3 +1,4 @@
+// src/app/layout.jsx
 import { DM_Mono, Syne } from "next/font/google";
 import localFont from "next/font/local";
 import Footer from "./components/Footer";
@@ -5,6 +6,8 @@ import Header from "./components/Header";
 import LoadingWrapper from "./components/LoadingWrapper";
 import ThemeProvider from "./components/ThemeProvider";
 import ClickSound from "./components/ClickSound"; // ✅ <-- New Component
+import ClientFluidLoader from "./components/ClientFluidLoader";
+import CursorFollower from "./components/CursorFollower";
 import "./globals.css";
 
 // Define your custom Softype font
@@ -51,6 +54,8 @@ export default function RootLayout({ children }) {
         >
           <LoadingWrapper>
             <ClickSound /> {/* ✅ Global Click Sound */}
+            <CursorFollower />
+            <ClientFluidLoader />
             <Header />
             {children}
             <Footer />
