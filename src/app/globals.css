@@ -11,6 +11,7 @@
   transform: translate(-50%, -50%);
   transition: background-color 0.2s ease, border 0.2s ease;
 }
+
 input[type="submit"],
 button,
 a {
@@ -102,8 +103,8 @@ h6 span {
   line-height: 70px;
 }
 .title-3 {
-  font-size: 160px;
-  line-height: 145px;
+  font-size: 115px;
+  line-height: 120px;
 }
 .title-4 {
   font-size: 48px;
@@ -428,11 +429,13 @@ menu
   padding: 0;
   margin: 0;
 }
+
 .mobile-menu .menu-link {
   color: var(--foreground);
   text-decoration: none;
   transition: color 0.3s ease;
   display: block;
+  line-height: 100%;
 }
 .mobile-menu .menu-link:hover {
   color: var(--primary);
@@ -487,10 +490,12 @@ menu
   flex-wrap: wrap;
   border-radius: 60px;
 }
+.dark .dribbble-sec .dribbble-middle-text img,
 .dark .header-wrapper .header a img {
   filter: brightness(0) saturate(100%) invert(89%) sepia(92%) saturate(1426%)
     hue-rotate(169deg) brightness(115%) contrast(98%);
 }
+.dribbble-sec .dribbble-middle-text img,
 .header-wrapper .header a img {
   filter: brightness(0) saturate(100%) invert(24%) sepia(1%) saturate(2881%)
     hue-rotate(183deg) brightness(93%) contrast(88%);
@@ -793,16 +798,19 @@ section.hero-wrapper h1.title-1.text-center {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+.dark .counter-sec .flex-box .box2 {
+  background: rgba(31, 32, 34, 0.4);
+}
 .counter-sec .flex-box .box2 {
   padding: 60px;
-  background: rgba(31, 32, 34, 0.4);
+  background: hsla(222, 6%, 67%, 0.2);
   border-radius: 1.5rem;
   margin-bottom: 30px;
 }
 .counter-sec .flex-box .box2 .num {
   font-size: 120px;
   font-weight: 400;
-  color: #e0eeee;
+  color: var(--foreground);
   font-family: var(--font-extra);
   line-height: 50px;
   position: relative;
@@ -1084,7 +1092,7 @@ section.dribbble-sec {
   }
   body .social-sec .social-item {
     padding: 22px 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--background);
   }
 }
 
@@ -1131,7 +1139,7 @@ section.dribbble-sec {
 */
 .social-sec .social-item p {
   font-size: 42px;
-  color: #fff;
+  color: var(--foreground);
 }
 .social-sec .social-item {
   text-decoration: none;
@@ -1140,7 +1148,7 @@ section.dribbble-sec {
   justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--foreground);
   padding: 35px 0;
   transition: all 0.3s ease-in-out;
 }
@@ -1180,6 +1188,7 @@ section.dribbble-sec {
   line-height: 115px;
   z-index: 1;
   position: relative;
+  color: #eef3f3;
 }
 .sm-bg-text-sec .overlay {
   position: absolute;
@@ -1201,16 +1210,21 @@ section.dribbble-sec {
   gap: 10px;
   margin-bottom: 10px;
 }
+.dark .form-group textarea,
+.dark .form-group select,
+.dark .form-group input {
+  background: rgba(31, 32, 34, 0.4);
+}
 .form-group textarea,
 .form-group select,
 .form-group input {
   border-radius: 0.5rem;
   padding: 1rem;
   font-weight: 400;
-  color: #e0eeee;
+  color: var(--foreground);
   border-width: 0;
   border-color: rgba(224, 238, 238, 0.5);
-  background: rgba(31, 32, 34, 0.4);
+  background: hsla(222, 6%, 67%, 0.2);
   font-size: 16px;
   line-height: 26px;
 }
@@ -1225,6 +1239,11 @@ section.dribbble-sec {
   gap: 30px;
 }
 ::placeholder {
+  font-size: 19px;
+  line-height: 29px;
+  color: #656565;
+}
+.dark ::placeholder {
   font-size: 19px;
   line-height: 29px;
   color: rgba(197, 252, 252, 0.4);
@@ -1278,8 +1297,11 @@ section.dribbble-sec {
 .services-sec {
   margin-bottom: 60px;
 }
-.services-sec .box {
+.dark .services-sec .box {
   background: rgba(31, 32, 34, 0.4);
+}
+.services-sec .box {
+  background: hsla(222, 6%, 67%, 0.2);
   border-radius: 1.5rem;
   padding: 100px;
   display: flex;
@@ -1336,8 +1358,8 @@ footer.footer {
 footer.footer .boxa {
   display: flex;
   padding: 38px 0;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid var(--foreground);
+  border-bottom: 1px solid var(--foreground);
 }
 footer.footer .boxa a.f-link.sm2,
 footer.footer .boxa a.f-link.sm1 {
@@ -1353,7 +1375,7 @@ footer.footer .boxa a.f-link.sm4 {
 
 footer.footer .boxa a.f-link {
   text-decoration: none;
-  color: #fff;
+  color: var(--foreground);
 }
 
 footer.footer .boxa a.f-link p.ft1 {

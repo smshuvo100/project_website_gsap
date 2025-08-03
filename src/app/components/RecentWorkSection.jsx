@@ -1,3 +1,4 @@
+// src/app/components/RecentWorkSection.jsx
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

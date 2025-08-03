@@ -18,11 +18,37 @@ export default function page() {
         description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
       />
 
-      <TextCounterSection text={`We help service businesses turn attention<br /> into action — with technical precision, compelling<br /> messaging, and scroll-stopping visuals.<br />`} />
-      <BannerSection title={"strategy meets execution. results follow."} bgImg={"/images/banner.webp"} />
+      <TextCounterSection
+        text={`We help service businesses turn attention<br /> into action — with technical precision, compelling<br /> messaging, and scroll-stopping visuals.<br />`}
+      />
+      <BannerSection
+        title={"strategy meets execution. results follow."}
+        bgImg={"/images/banner.webp"}
+      />
 
       <WhoWeAre
         description={`We work with service businesses that want more than just traffic — they want trust, visibility, and qualified leads. Every service we offer is focused on one thing: measurable growth.<br />`}
+      />
+
+      <ServicesSection
+        title={`website <br />development`}
+        description={`Luxury, conversion-focused websites tailored to your brand – specializing in real estate, home services, and corporate sites that impress and perform.`}
+        list1={`<p>React JS</p>
+                <p>Next JS</p>
+                <p>Node JS</p>
+                <p>Angular JS</p>
+                <p>WordPress</p>
+                <p>Magento</p>
+                <p>Shopify</p>
+                <p>Laravel</p>
+                <p>PHP</p>`}
+        list2={`<p>HTML5 & CSS3</p>
+                <p>LESS & SASS</p>
+                <p>Bootstrap</p>
+                <p>Tailwind</p>
+                <p>Foundation</p>
+                <p>Javascript</p>
+                <p>jQuery</p>`}
       />
 
       <ServicesSection

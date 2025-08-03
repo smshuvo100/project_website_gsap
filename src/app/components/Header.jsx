@@ -1,14 +1,17 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { AudioPlayer } from "./AudioPlayer";
 import { ThemeToggle } from "./ThemeToggle";
 import AnimatedButton from "./AnimatedButton";
+import gsap from "gsap";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const linkRefs = useRef([]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -17,10 +20,27 @@ function Header() {
     const handleKeyDown = (e) => {
       if (e.key === "Escape" && isMenuOpen) closeMenu();
     };
-
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isMenuOpen]);
+
+  const handleLinkHover = (index) => {
+    gsap.to(linkRefs.current[index], {
+      backgroundPosition: "100% 50%",
+      scale: 1.05,
+      duration: 0.5,
+      ease: "power2.out",
+    });
+  };
+
+  const handleLinkLeave = (index) => {
+    gsap.to(linkRefs.current[index], {
+      backgroundPosition: "0% 50%",
+      scale: 1,
+      duration: 0.5,
+      ease: "power2.out",
+    });
+  };
 
   return (
     <>
@@ -77,7 +97,10 @@ function Header() {
                   <Link
                     href="/work"
                     className="title-1 menu-link"
+                    ref={(el) => (linkRefs.current[0] = el)}
                     onClick={closeMenu}
+                    onMouseEnter={() => handleLinkHover(0)}
+                    onMouseLeave={() => handleLinkLeave(0)}
                   >
                     work
                   </Link>
@@ -86,7 +109,10 @@ function Header() {
                   <Link
                     href="/about"
                     className="title-1 menu-link"
+                    ref={(el) => (linkRefs.current[1] = el)}
                     onClick={closeMenu}
+                    onMouseEnter={() => handleLinkHover(1)}
+                    onMouseLeave={() => handleLinkLeave(1)}
                   >
                     about
                   </Link>
@@ -95,33 +121,41 @@ function Header() {
                   <Link
                     href="/services"
                     className="title-1 menu-link"
+                    ref={(el) => (linkRefs.current[2] = el)}
                     onClick={closeMenu}
+                    onMouseEnter={() => handleLinkHover(2)}
+                    onMouseLeave={() => handleLinkLeave(2)}
                   >
                     services
                   </Link>
                 </li>
-
                 <li>
                   <Link
                     href="/team"
                     className="title-1 menu-link"
+                    ref={(el) => (linkRefs.current[3] = el)}
                     onClick={closeMenu}
+                    onMouseEnter={() => handleLinkHover(3)}
+                    onMouseLeave={() => handleLinkLeave(3)}
                   >
                     team
                   </Link>
                 </li>
-
                 <li>
                   <Link
                     href="/contact"
                     className="title-1 menu-link"
+                    ref={(el) => (linkRefs.current[4] = el)}
                     onClick={closeMenu}
+                    onMouseEnter={() => handleLinkHover(4)}
+                    onMouseLeave={() => handleLinkLeave(4)}
                   >
                     contact
                   </Link>
                 </li>
               </ul>
             </nav>
+
             <div className="menu-social">
               <div className="info">
                 <a className="email" href="mailto:info@market-target.com">
@@ -130,38 +164,18 @@ function Header() {
                 <a href="tel:+31622750959">+31 6 22750959</a>
               </div>
               <div className="socials-m">
-                <a className="s-item" href="">
-                  <Image
-                    src="/images/linkedin.svg"
-                    alt=""
-                    width={64}
-                    height={64}
-                  />
-                </a>
-                <a className="s-item" href="">
-                  <Image
-                    src="/images/instagram.svg"
-                    alt=""
-                    width={64}
-                    height={64}
-                  />
-                </a>
-                <a className="s-item" href="">
-                  <Image
-                    src="/images/youtube1.svg"
-                    alt=""
-                    width={64}
-                    height={64}
-                  />
-                </a>
-                <a className="s-item" href="">
-                  <Image
-                    src="/images/facebook.svg"
-                    alt=""
-                    width={64}
-                    height={64}
-                  />
-                </a>
+                {["linkedin", "instagram", "youtube1", "facebook"].map(
+                  (platform) => (
+                    <a className="s-item" href="#" key={platform}>
+                      <Image
+                        src={`/images/${platform}.svg`}
+                        alt=""
+                        width={64}
+                        height={64}
+                      />
+                    </a>
+                  )
+                )}
               </div>
             </div>
           </div>
