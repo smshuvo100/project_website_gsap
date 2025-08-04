@@ -45,7 +45,6 @@ export default function CursorFollower() {
       } else {
         gsap.to(follower, {
           backgroundColor: primary,
-
           scale: 1.5,
           duration: 0.3,
         });
@@ -59,6 +58,7 @@ export default function CursorFollower() {
       const primary = getCSSVariable("--primary");
 
       gsap.to(follower, {
+        backgroundColor: primary,
         border: "none",
         scale: 1,
         duration: 0.3,
