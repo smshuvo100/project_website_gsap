@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import { useRef } from "react";
 import AnimatedButton from "./AnimatedButton";
+
+import FooterBottom from "./FooterBottom";
 function Footer() {
   const recentWorkSecRef = useRef(null);
   const text1Ref = useRef(null);
@@ -93,6 +95,8 @@ function Footer() {
           </div>
         </div>
       </footer>
+
+      <FooterBottom />
     </>
   );
 }

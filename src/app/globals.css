@@ -1352,9 +1352,9 @@ section.dribbble-sec {
   footer
 ======================
 */
-footer.footer {
+/* footer.footer {
   padding-bottom: 150px;
-}
+} */
 footer.footer .boxa {
   display: flex;
   padding: 38px 0;
@@ -1511,4 +1511,113 @@ section.sm-video3-sec .video3-container {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+/*
+=========================
+*/
+
+.footer-bottom {
+  width: 100%;
+  background: transparent !important;
+  /* padding-top: 50px; */
+}
+
+.footer-bottom .torch-wrap {
+  --spot-x: -9999px;
+  --spot-y: -9999px;
+  --spot-size: 220px;
+  --spot-feather: 100px;
+  --text-dim-opacity: 0.06;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  isolation: isolate;
+}
+
+.footer-bottom .bg,
+.footer-bottom .text-dim,
+.footer-bottom .text-bright {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+.footer-bottom .bg {
+  z-index: 0;
+}
+.footer-bottom .text-dim {
+  z-index: 1;
+  opacity: var(--text-dim-opacity);
+}
+.footer-bottom .text-bright {
+  z-index: 2;
+  -webkit-mask-image: radial-gradient(
+    circle var(--spot-size) at var(--spot-x) var(--spot-y),
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) calc(100% - var(--spot-feather)),
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    circle var(--spot-size) at var(--spot-x) var(--spot-y),
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) calc(100% - var(--spot-feather)),
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.footer-bottom .glow {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background: radial-gradient(
+      circle 90px at var(--spot-x) var(--spot-y),
+      rgba(255, 210, 150, 0.5),
+      rgba(255, 210, 150, 0.2) 60%,
+      rgba(255, 210, 150, 0) 100%
+    ),
+    radial-gradient(
+      circle 170px at var(--spot-x) var(--spot-y),
+      rgba(255, 210, 150, 0.22),
+      rgba(255, 210, 150, 0) 100%
+    );
+  opacity: 0.9;
+  transition: opacity 120ms ease-out;
+  /* padding-top: 100px; */
+}
+
+.footer-bottom .cursor-ghost {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 100ms ease-out;
+  will-change: transform;
+}
+
+/* (A) হোভার করলে সিস্টেম কার্সর হাইড + আমাদের ইমেজ দেখাও */
+.footer-bottom .torch-wrap.is-active {
+  cursor: none;
+}
+
+.footer-bottom img.text-dim,
+.footer-bottom img.text-bright {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(6%) saturate(353%)
+    hue-rotate(177deg) brightness(91%) contrast(93%);
+}
+
+.dark .footer-bottom img.text-dim,
+.dark .footer-bottom img.text-bright {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(31%) saturate(4221%)
+    hue-rotate(176deg) brightness(111%) contrast(87%);
 }
