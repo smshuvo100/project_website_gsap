@@ -30,7 +30,7 @@ export function AudioPlayer() {
 
       <audio
         ref={audioRef}
-        src="/audio/jungle.mp3"
+        src="/audio/audio1.mp3"
         loop={true}
         preload="metadata"
       />
