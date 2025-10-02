@@ -41,15 +41,16 @@ export function VideoSection() {
             end: "top 80%",
             toggleActions: "play none none none",
             scrub: 2,
-            pin: true,
+            pin: false,
             markers: false,
+
             onEnter: () => {
               gsap.to(videoRef.current, {
                 y: 0,
-                scale: 1
+                scale: 1,
               });
-            }
-          }
+            },
+          },
         });
       } else {
         gsap.from(videoRef.current, {
@@ -57,7 +58,7 @@ export function VideoSection() {
           opacity: 0,
           duration: 2,
           delay: 3,
-          ease: "Expo.easeOut"
+          ease: "Expo.easeOut",
         });
       }
     },

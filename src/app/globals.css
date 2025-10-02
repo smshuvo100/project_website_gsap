@@ -94,7 +94,7 @@ h6 span {
 }
 
 .title-1 {
-  font-size: 100px;
+  font-size: 90px;
   line-height: 90px;
   text-transform: lowercase;
 }
@@ -103,8 +103,8 @@ h6 span {
   line-height: 70px;
 }
 .title-3 {
-  font-size: 115px;
-  line-height: 120px;
+  font-size: 90px;
+  line-height: 90px;
 }
 .title-4 {
   font-size: 48px;
@@ -823,7 +823,7 @@ section.hero-wrapper h1.title-1.text-center {
   top: 9px;
 }
 .counter-sec .flex-box .box2 h3 {
-  font-size: 38px;
+  font-size: 28px;
   line-height: 34px;
   text-transform: lowercase;
   font-weight: 400;
