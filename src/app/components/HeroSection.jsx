@@ -123,10 +123,10 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </div>
           <div className="btn-group">
             <div className="btn" ref={btn1Ref}>
-              <AnimatedButton href="/work">View Our Work</AnimatedButton>
+              <AnimatedButton href="/work">begin hier</AnimatedButton>
             </div>
             <div className="btn" ref={btn2Ref}>
-              <AnimatedButton href="/about">Start Your Project</AnimatedButton>
+              <AnimatedButton href="/about">laat me zien hoe</AnimatedButton>
             </div>
           </div>
         </div>
