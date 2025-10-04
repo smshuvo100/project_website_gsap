@@ -79,15 +79,15 @@ function Footer() {
         <div className="container">
           <div className="boxa">
             <a className="f-link sm1" href="">
-              <p className="ft1">Email</p>
+              <p className="ft1">blijft Engels</p>
               <p className="ft2">info@market-target.com</p>
             </a>
             <a className="f-link sm2" href="">
-              <p className="ft1">Call</p>
+              <p className="ft1">Bel</p>
               <p className="ft2">+31 6 22750959</p>
             </a>
             <a className="f-link sm4" href="">
-              <p className="ft1">Address</p>
+              <p className="ft1">Adres</p>
               <p className="ft2">
                 Based in the Netherlands, <br /> serving clients worldwide
               </p>

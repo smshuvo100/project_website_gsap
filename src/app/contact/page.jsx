@@ -29,14 +29,14 @@ export default function page() {
   return (
     <>
       <HeroAllSection
-        title1={"let’s talk about"}
-        title2={"growing your business"}
-        description={`Need better visibility, stronger branding, <br/> or scroll-stopping video? Tell us what you<br/> need — we’ll help you get there.`}
+        title1={" laten we praten over het"}
+        title2={"groeien van jouw bedrijf"}
+        description={`Heb je behoefte aan meer zichtbaarheid, sterkere branding<br/> of video die direct de aandacht trekt? Vertel ons<br/> wat je nodig hebt — wij helpen je daar te komen.`}
       />
 
       <TextCounterSection
-        text={`Start your project — or just start the conversation.`}
-        paragraph={`Tell us what’s not working — and where you want to go. We’ll respond with clear steps to help.`}
+        text={`Start je project — of begin gewoon het gesprek.`}
+        paragraph={`Vertel ons wat er niet werkt — en waar je heen wilt. Wij reageren met duidelijke stappen om je te helpen.`}
       />
 
       <section className="contact-sec">
@@ -44,7 +44,7 @@ export default function page() {
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="name">Name*</label>
+                <label htmlFor="name">Naam*</label>
                 <input
                   type="text"
                   id="name"
@@ -55,7 +55,7 @@ export default function page() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">Email*</label>
+                <label htmlFor="email">E-mail*</label>
                 <input
                   type="email"
                   id="email"
@@ -68,7 +68,7 @@ export default function page() {
 
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="phone">Phone</label>
+                <label htmlFor="phone">Telefoon</label>
                 <input
                   type="tel"
                   id="phone"
@@ -77,7 +77,7 @@ export default function page() {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="company">Company</label>
+                <label htmlFor="company">Bedrijf</label>
                 <input
                   type="text"
                   id="company"
@@ -89,7 +89,7 @@ export default function page() {
 
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="projectType">Project Type*</label>
+                <label htmlFor="projectType">Projecttype*</label>
                 <select id="projectType" name="projectType" required>
                   <option value="" disabled>
                     Select project type
@@ -101,7 +101,7 @@ export default function page() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="budget">Project Budget*</label>
+                <label htmlFor="budget">Projectbudget*</label>
                 <select id="budget" name="budget" required>
                   <option value="" disabled>
                     Select budget
@@ -115,7 +115,7 @@ export default function page() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="referral">How did you hear about us?</label>
+              <label htmlFor="referral">Hoe heb je van ons gehoord?</label>
               <select id="referral" name="referral">
                 <option value="" disabled>
                   Select
@@ -128,7 +128,7 @@ export default function page() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">Tell us about your project*</label>
+              <label htmlFor="message">Vertel ons meer over je project*</label>
               <textarea
                 id="message"
                 name="message"
@@ -140,7 +140,7 @@ export default function page() {
 
             <div className="btn form-btn">
               <AnimatedButton as="button" type="submit">
-                Submit
+                Verstuur
               </AnimatedButton>
             </div>
 

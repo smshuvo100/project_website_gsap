@@ -19,28 +19,26 @@ export default function About() {
     <>
       <HeroAllSection
         id={"sm-bg-text-sec"}
-        title1={"a strategic growth partner"}
-        title2={"for service businesses."}
-        description={`We help service brands get found,<br/> build trust, and win clients — using data-backed SEO,<br/> compelling branding, and high-impact video.`}
+        title1={"een strategische groeipartner "}
+        title2={"voor dienstverlenende bedrijven."}
+        description={`Wij helpen dienstverlenende merken gevonden te worden,<br/> vertrouwen op te bouwen en klanten te winnen — met data-gedreven <br/>SEO, sterke branding en video met impact.`}
       />
       <TextCounterSection
-        text={`Market Target is built on 10+ years<br/> of helping service-based businesses<br/> rise above the noise.`}
-        paragraph={`We've helped agencies, consultants,<br/> and tradespeople turn traffic into leads and<br/> leads into revenue — without wasting a cent.`}
+        text={`Market Target bouwt op meer dan 10 jaar ervaring<br/> in het helpen van dienstverlenende bedrijven om <br/> boven het lawaai uit te stijgen.`}
+        paragraph={`Wij hebben bureaus, consultants en vakmensen geholpen om<br/> kliks om te zetten in leads en leads in omzet — zonder<br/> een cent te verspillen.`}
       />
 
       <BannerSection
-        title={"strategic. sreative. built to convert."}
+        title={"strategisch. creatief. gebouwd om te converteren."}
         bgImg={"/images/banner11.webp"}
       />
 
       <WhoWeAre
         title1={"who"}
         title2={"we are"}
-        description={`We’re not a creative agency.<br /> We’re a results agency.
- Market Target combines deep<br /> technical SEO, brand positioning, and high-quality<br /> video to help service-based businesses increase visibility, <br />build credibility, and generate real leads.
-
-                <br />`}
-        paragraph={`We stay ahead of algorithm changes, design trends, and buyer behavior so you don’t have to. We bring measurable clarity to your online presence.`}
+        description={`Wij zijn geen creatief bureau.
+ Wij zijn een resultaatgericht <br />bureau. Market Target combineert diepgaande technische SEO,<br /> brand positioning en hoogwaardige video om <br />dienstverlenende bedrijven te helpen hun zichtbaarheid <br />te vergroten, geloofwaardigheid op te bouwen en <br />echte leads te genereren.`}
+        paragraph={` Wij blijven voor op algoritme-updates, designtrends en koopgedrag, zodat jij dat niet hoeft. Wij brengen meetbare duidelijkheid in je online aanwezigheid.`}
         btn_text={"About Us"}
         btn_link={"/about"}
       />

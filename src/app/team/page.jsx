@@ -17,21 +17,22 @@ export default function page() {
   return (
     <>
       <HeroAllSection
-        title1={"the team behind"}
+        title1={"het team achter"}
         title2={"market target"}
-        description={`Strategists, creators, and marketers with one goal:<br/> helping service businesses grow with SEO,<br/>  branding, and video that performs.`}
+        description={`Strategen, creators en marketeers met één doel: <br/>dienstverlenende bedrijven laten groeien met SEO,<br/> branding en video die resultaat oplevert.`}
       />
 
       <TextCounterSection
-        text={`Our results come from experience — not hype.<br/> Every project is powered by a team that understands<br/> both strategy and execution.`}
+        text={` Onze resultaten komen voort uit ervaring — niet uit hype.
+ Elk project wordt gedragen door een team dat zowel strategie als uitvoering begrijpt.`}
       />
       <BannerSection
-        title={"built on strategy. backed by results."}
+        title={"gebouwd op strategie. ondersteund door resultaten."}
         bgImg={"/images/banner11.webp"}
       />
 
       <WhoWeAre
-        description={`Meet the people behind the work — SEO specialists, branding experts, and video creatives focused on moving your business forward.`}
+        description={`Ontmoet de mensen achter het werk — SEO-specialisten, brandingexperts en videomakers die zich richten op het vooruithelpen van jouw bedrijf.`}
       />
 
       {/* <TeamMemberSection /> */}
@@ -52,10 +53,10 @@ export default function page() {
       </section>
 
       <JungleSection
-        title1={"we're hiring"}
-        title2={"talented marketers"}
+        title1={" wij zoeken"}
+        title2={"talentvolle marketeers"}
         title3={"& creators"}
-        description={`Passionate about SEO, storytelling, <br/>or digital content? We’d love to hear from you.`}
+        description={`Passie voor SEO, storytelling of <br/>digitale content? We horen graag van je.`}
         btn_text={"Meet the Team"}
         btn_link={"/about"}
       />

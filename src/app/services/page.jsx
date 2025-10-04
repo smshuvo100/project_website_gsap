@@ -18,26 +18,26 @@ export default function page() {
       {/* we help you get found, 
     trusted, and chosen. 
     */}
-      xa
+
       <HeroAllSection
         id={"secrion1"}
-        title1={"we help you get found,"}
-        title2={"trusted, and chosen."}
-        description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
+        title1={"wij helpen je gevonden, "}
+        title2={"vertrouwd en gekozen te worden."}
+        description={`Wij helpen dienstverlenende bedrijven om aandacht om<br/> te zetten in actie — met technische precisie, overtuigende <br/>messaging en visuele content die blijft hangen.`}
       />
       <TextCounterSection
         text={`We help service businesses turn attention<br /> into action — with technical precision, compelling<br /> messaging, and scroll-stopping visuals.<br />`}
       />
       <BannerSection
-        title={"strategy meets execution. results follow."}
+        title={"strategie ontmoet uitvoering. resultaten volgen."}
         bgImg={"/images/banner.webp"}
       />
       <WhoWeAre
-        description={`We work with service businesses that want more than just traffic — they want trust, visibility, and qualified leads. Every service we offer is focused on one thing: measurable growth.<br />`}
+        description={`Wij werken met dienstverlenende bedrijven die meer willen dan alleen verkeer — ze willen vertrouwen, zichtbaarheid en gekwalificeerde leads. Elke dienst die wij aanbieden is gericht op één ding: meetbare groei.`}
       />
       <ServicesSection
-        title={`website <br />development`}
-        description={`Luxury, conversion-focused websites tailored to your brand – specializing in real estate, home services, and corporate sites that impress and perform.`}
+        title={`website <br />ontwikkeling`}
+        description={`Luxe, conversiegerichte websites op maat van je merk — gespecialiseerd in vastgoed, horecadiensten en bedrijven die impact en prestaties nodig hebben.`}
         list1={`<p>React JS</p>
                 <p>Next JS</p>
                 <p>Node JS</p>
@@ -56,8 +56,8 @@ export default function page() {
                 <p>jQuery</p>`}
       />
       <ServicesSection
-        title={`seo that gets <br />you found`}
-        description={`We audit, fix, and optimize your site from the ground up — site structure, speed, schema, and content — so you rank higher and stay there.`}
+        title={`seo waarmee je <br />wordt gevonden`}
+        description={`Wij auditen, repareren en optimaliseren je site van de basis af — structuur, snelheid, schema en content — zodat je hoger scoort en zichtbaar blijft.`}
         list1={`<p>Site audits</p>
                   <p>Keyword strategy</p>
                   <p>Core Web Vitals</p>
@@ -68,8 +68,8 @@ export default function page() {
                   <p>Performance optimization</p>`}
       />
       <ServicesSection
-        title={`video that builds trust and converts`}
-        description={`We create short-form, cinematic, and aerial video content that shows your expertise and elevates your brand across web and social.`}
+        title={`video die vertrouwen opbouwt en converteert`}
+        description={`Wij creëren korte, cinematische en luchtvideo’s die jouw expertise laten zien en je merk sterker maken.`}
         list1={`<p>Drone videography</p>
                   <p>Service explainers</p>
                   <p>Social video content</p>`}
@@ -77,8 +77,8 @@ export default function page() {
                   <p>ouTube & web-ready formats</p>`}
       />
       <ServicesSection
-        title={`branding that makes you the obvious choice`}
-        description={`We craft brands that are consistent, credible, and easy to choose — from logos and color systems to tone of voice and trust-building assets.`}
+        title={`branding die jou de voor de hand liggende keuze maakt`}
+        description={` Wij bouwen merken die consistent, geloofwaardig en gemakkelijk te herkennen zijn — van logo tot stijlgids en van tone of voice tot merkidentiteit.`}
         list1={`<p>Brand positioning</p>
                   <p>Messaging frameworks</p>
                   <p>Visual identity</p>`}
@@ -86,8 +86,8 @@ export default function page() {
                   <p>Style guides</p>`}
       />
       <ServicesSection
-        title={`drone photogrammetry & aerial mapping`}
-        description={`We capture high-resolution drone imagery to create detailed maps, 3D models, and precision measurements — perfect for campsites, resorts, and outdoor venues looking to plan, manage, and showcase their spaces from above.<br /><br />
+        title={`drone fotogrammetrie & luchtmapping`}
+        description={`Wij leggen high-resolution dronebeelden vast voor nauwkeurige mapping, 3D-modellen en projectinspecties — perfect voor vastgoed, bouw, natuurbeheer en buitenprojecten.<br /><br />
           <p>Turn aerial data into actionable plans and standout visuals.</p>
           <p>Orthophotos & high-accuracy mapping</p>
           <p>3D terrain / structure models (DEM/DSM)</p>

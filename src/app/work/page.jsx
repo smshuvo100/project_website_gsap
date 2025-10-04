@@ -9,9 +9,9 @@ export default function page() {
     <>
       <HeroAllSection
         id={"sm-bg-text-sec"}
-        title1={"work that builds trust"}
-        title2={"and drives results"}
-        description={`Explore how we help service businesses stand out,<br/> rank higher, and convert better — through SEO, branding,<br/> and aerial content that moves people.`}
+        title1={"werk dat vertrouwen opbouwt "}
+        title2={"en resultaten oplevert"}
+        description={`Wij laten zien hoe we dienstverlenende bedrijven helpen opvallen,<br/> hoger scoren en vertrouwen winnen — via SEO, branding en <br/>luchtcontent die mensen raakt.`}
       />
       <WorkSection1 />
 
